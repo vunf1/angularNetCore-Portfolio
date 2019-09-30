@@ -1,0 +1,15 @@
+
+{
+  "first-line-h1": false,
+  "line-length": false,
+  "fenced-code-language": false,
+	"commands-show-output": false,
+	"no-hard-tabs": false,
+  "ul-indent": false,
+  "ol-prefix": {
+    "style": "ordered" 
+  },
+  "ul-style": {
+    "style": "dash"
+  }
+}
