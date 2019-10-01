@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "clean-dev": "rimraf dev && rm -f npm-debug.log*",
-    "build-client": "webpack --config src/client/config/webpack.prod.babel.js --progress",
-    "build-server": "tsc --project src/server/ --outDir dist/",
+    "build-client": "webpack --config src-a/client/config/webpack.prod.babel.js --progress",
+    "build-server": "tsc --project src-a/server/ --outDir dist/",
     "build": "npm run clean && npm run build-server && npm run build-client",
     "build-dev-client": "webpack --config src/client/config/webpack.dev.babel.js --progress",
     "build-dev-server": "tsc --project src/server/ --outDir dev/ --sourceMap",

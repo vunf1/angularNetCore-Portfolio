@@ -3,7 +3,7 @@ import * as StaticFiles from "koa-static";
 import * as BodyParser from "koa-bodyparser";
 import ROUTER from "./app.routes";
 
-const CLIENT_FILES = './dev/client/';
+const CLIENT_FILES = './src-a/client/';
 
 const SERVER = new Koa();
 

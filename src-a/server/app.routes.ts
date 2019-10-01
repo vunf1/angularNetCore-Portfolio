@@ -5,7 +5,7 @@ const ROUTER = new Router();
 
 const LOAD_HTML = function() {
     return new Promise(function (resolve, reject) {
-        fs.readFile('./dev/client/index.html', {'encoding': 'utf8'}, function (err, data) {
+        fs.readFile('./src-a/client/index.html', {'encoding': 'utf8'}, function (err, data) {
             if(err) return reject(err);
             resolve(data);
         });
