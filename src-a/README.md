@@ -1,27 +1,108 @@
-# ClientApp
+# Koa Angular JWT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+### Desertation Tests
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Need TO install on linux/windows/mac:
+##### :exclamation: VSCode
+- [Download](https://code.visualstudio.com/Download)
+##### :exclamation: npm
+- [Get npm](https://www.npmjs.com/get-npm)
+##### :exclamation: NodeJS 
+- easy method install , <code>npm i -g n</code>
+- easy method specify version, <code>npm  n < wanted version >, or npm  n@latest, or npm n </code>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### after npm and nodejs installed, root folder and execute 
+#### <code>npm i</code>
+#### <code>npm run < method from package file ></code>
+---
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### :bust_in_silhouette: Github commands:
 
-## Running unit tests
+###### config your console with yout github account for correct commits
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> git config --global user.email "< uni  email >"
 
-## Running end-to-end tests
+> git config --global user.name "< uni  email  without  @uni.coventry.ac.uk>"
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+---
+> git checkout < branch >
+---
 
-## Further help
+> git add <name  files  to  add  (your  file(s)  or  -A  #all#  )  <br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+> git commit -m "<text,  try  write  something  about  you  have  done(Good  pratice)>"
+
+> git push
+
+  
+  
+  
+
+###  :anger:BUGS FOUND:anger:
+
+>  -  [ ] none
+
+---
+
+ **TO DO LIST**
+
+  
+# BackLog
+    
+  personal development plan [individual]
+    
+# TaskBoard
+
+> - [ ] 	About
+ -[ ] Design
+ -[x] Content
+ 
+> - [ ] 	Experience
+ -[ ] Design
+ -[x] Content
+ 
+> - [ ]  	Education
+ -[ ] Design
+ -[ ] Content
+ 
+> - [ ]  	Skills
+ -[ ] Design
+ -[ ] Content
+ 
+> - [ ]  	Interests
+ -[ ] Design
+ -[ ] Content
+ 
+> - [ ]  	Live Projects
+ -[ ] Design
+ -[ ] Content
+      
+
+
+### Finished
+- [x] Github set up 
+- [ ] npm Dependencies Fix (tsc, rimraf) + npm audit fix
+    
+  
+###### Random Ideia for Project
+
+- [ ] something
+
+  
+  
+
+### EXTRA
+ 
+
+### Author
+  
+
+  
+|[Joao Maia ](https://github.coventry.ac.uk/deoiveij/)   |  
+|--|
+|<a  href="https://twitter.com/wannabevunf1"><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  | 
+
+
