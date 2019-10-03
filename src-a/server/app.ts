@@ -1,7 +1,7 @@
-import * as Koa from "koa";
-import * as StaticFiles from "koa-static";
-import * as BodyParser from "koa-bodyparser";
-import ROUTER from "./app.routes";
+import * as Koa from 'koa';
+import * as StaticFiles from 'koa-static';
+import * as BodyParser from 'koa-bodyparser';
+import ROUTER from './app.routes';
 
 const CLIENT_FILES = './src-a/client/';
 
