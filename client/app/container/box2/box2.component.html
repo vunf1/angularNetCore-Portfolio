@@ -1,0 +1,34 @@
+<section class=" p-3">
+  <h2 (click)='triggerDiv("experience")' id='experienceTitle'>
+    <mat-icon>eject</mat-icon> Experience
+  </h2>
+  <div id="experience">
+
+    <mat-accordion *ngFor="let data of jobsElement" [style.background]="data.color">
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"  [style.background]="data.color">
+        <mat-expansion-panel-header>
+          <mat-panel-title> <!-- ! TITLE -->
+            {{data.jobTitle[0]}}
+          </mat-panel-title>
+          <mat-panel-description ><!-- ! Date -->
+            {{data.date[0]}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <!-- ? SHOW IF OPEN -->
+        <mat-grid-list cols="4" rowHeight="5:2" >
+
+          <mat-grid-tile layout-align="end start"
+          [colspan]="data.description[1]" [rowspan]="data.description[2]">
+            {{data.description[0]}}
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="data.jobLocal[1]" [rowspan]="data.jobLocal[2]">
+            {{data.jobLocal[0]}}
+          </mat-grid-tile>
+
+        </mat-grid-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+</section>
