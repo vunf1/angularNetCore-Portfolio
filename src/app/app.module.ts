@@ -23,20 +23,20 @@ import { MatButtonModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './navigation/header/header.component';
 
-import { BoxComponent } from './container/box/box.component';
-import { Box2Component } from './container/box2/box2.component';
+import { AboutComponent } from './container/about/about.component';
+import { ExperienceComponent } from './container/experience/experience.component';
 
 const appRoutes: Routes = [
-  { path: 'about', component: BoxComponent },
-  { path: 'experience', component: Box2Component },
+  { path: 'about', component: AboutComponent },
+  { path: 'experience', component: ExperienceComponent },
 ];
 
 @NgModule( {
   declarations: [
     AppComponent,
     HeaderComponent,
-    BoxComponent,
-    Box2Component
+    AboutComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserAnimationsModule,

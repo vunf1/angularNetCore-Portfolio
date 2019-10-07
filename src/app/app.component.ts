@@ -7,7 +7,9 @@ import {Component, OnDestroy} from '@angular/core';
   styleUrls: ['./app.component.css', './css/resume.min.css', ]
 })
 export class AppComponent  {
-  title = 'OverKill Project ver.0.0.2';
+  title = 'OverKill Project v.0.1.0';
+
+  const screenWsize = window.
 
 
 }
