@@ -22,6 +22,8 @@ import { MatButtonModule } from '@angular/material';
 /** ! Independent */
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './navigation/header/header.component';
+import { SidebarComponent } from './navigation/sidebar/sidebar.component';
+
 
 import { AboutComponent } from './container/about/about.component';
 import { ExperienceComponent } from './container/experience/experience.component';
@@ -36,7 +38,8 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserAnimationsModule,
