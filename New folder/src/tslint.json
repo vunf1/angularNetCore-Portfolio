@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules"
+    ],
+    "include":[
+      "app"
+    ]
+  },
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys" : false,
+    "max-line-length":false,
+    "no-console":false,
+    "no-empty":false,
+    "interface-name":false,
+    "variable-name":false,
+    "directive-selector": [
+      true,
+      "attribute",
+      "apr",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "apr",
+      "kebab-case"
+    ]
+  }
+}
