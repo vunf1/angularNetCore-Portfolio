@@ -1,6 +1,6 @@
 // ! EXPERIENCE BOX
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { JobDescription, triggerDiv, wConSole, lConSole, eConSole, iConSole } from "../interface/JobDescription";
+import { JobDescription, escondeElement, wConSole, lConSole, eConSole, iConSole } from "../interface/JobDescription";
 import {CommonModule} from "@angular/common";
 @Component({
   selector: "apr-experience",
@@ -17,8 +17,8 @@ export class ExperienceComponent implements OnInit {
   public wConSole: any = wConSole;
   public eConSole: any = eConSole;
   public iConSole: any = iConSole;
-
-  public triggerDiv: any = triggerDiv;
+  public currentJustify = "center"; // ng table set centra os elementos no centro
+  public escondeElement: any = escondeElement;
   public componentTitle: string = "Experience";
   public jobsElement: JobDescription[] = [
     /** 0 - Autonomous Self */

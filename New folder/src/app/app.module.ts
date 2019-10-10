@@ -104,7 +104,7 @@ const appRoutes: Routes = [{
     MatExpansionModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: false } // <-- debugging purposes only (true)
+      { enableTracing: false }, // <-- debugging purposes only (true)
     ),
   ],
   exports: [

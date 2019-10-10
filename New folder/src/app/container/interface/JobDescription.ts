@@ -61,14 +61,12 @@ export interface NavTitles {
  *  o element (agarra o id do child) quando clicado (Melhoria possivel)
  *
  */
-export function triggerDiv(id: string): void {
+export function escondeElement(id: string): void {
   const element = document.getElementById(id);
   if (element.style.display === "none") {
     element.style.display = "block";
-    // element.classList.add("alert alert-success");
   } else {
     element.style.display = "none";
-    // element.classList.remove("alert alert-success");
   }
 }
 export function  wConSole(string: any) {

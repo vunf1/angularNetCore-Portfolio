@@ -1,5 +1,5 @@
 <section class=" p-3">
-  <h2 (click)="triggerDiv('experience')" id='experienceTitle'>
+  <h2 (click)="escondeElement('experience')" id='experienceTitle'>
     <mat-icon>eject</mat-icon> {{componentTitle}}
   </h2>
   <article id="experience">
@@ -29,63 +29,62 @@
       </mat-expansion-panel>
     </mat-accordion> -->
     <ngb-accordion *ngFor="let data of jobsElement" #a="ngbAccordion" activeIds="custom-panel-1" id="accordionTotal">
-      <ngb-panel  id="{{data.id}}">
+      <ngb-panel id="{{data.id}}">
         <ng-template ngbPanelHeader let-opened="opened">
-            <header class="d-flex align-items-center justify-content-between border-0">
-              
-              <button ngbPanelToggle class="btn border-0 container-fluid text-right titleAccord ">
-                {{data.jobTitle}}<br>{{data.jobLocal}}
-                <h3  class="btn border-0 float-right " >
-                  {{ data.date}}</h3>
-              </button>
-              
-            </header>
+          <header class="d-flex align-items-center justify-content-between border-0">
+
+            <button ngbPanelToggle class="btn border-0 container-fluid text-left titleAccord ">
+              {{data.jobTitle}}<br>{{data.jobLocal}}
+              <h3 class="btn border-0 float-right ">
+                {{ data.date}}</h3>
+            </button>
+
+          </header>
         </ng-template>
         <ng-template ngbPanelContent>
           {{data.description}}
         </ng-template>
-        
+
       </ngb-panel>
     </ngb-accordion>
   </article>
 
 </section>
-<!-- 
-<ngb-panel>
-    <ng-template ngbPanelHeader>
-      <div class="d-flex align-items-center justify-content-between">
-        <h5 class="m-0">Second panel</h5>
-        <div>
-          <button ngbPanelToggle class="btn btn-sm btn-outline-primary ml-2">Toggle second</button>
-          <button type="button" class="btn btn-sm btn-outline-secondary ml-2" (click)="disabled = !disabled">
-            {{ disabled ? 'En' : 'Dis' }}able third
-          </button>
-          <button type="button" class="btn btn-sm btn-outline-danger ml-2" (click)="a.collapseAll()">Collapse all</button>
-        </div>
-      </div>
+
+
+<ngb-tabset [justify]="currentJustify">
+  <ngb-tab title="Simple">
+    <ng-template ngbTabContent>
+      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+        master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+        keffiyeh
+        dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+        iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
     </ng-template>
-    <ng-template ngbPanelContent>
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-      labore sustainable VHS.
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle><b>Fancy</b> title</ng-template>
+    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+      <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
+        farm-to-table
+        craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+        vinyl
+        cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
+        yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable
+        jean
+        shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
+        sint qui sapiente accusamus tattooed echo park.</p>
     </ng-template>
-  </ngb-panel>
-  <ngb-panel [disabled]="disabled">
-    <ng-template ngbPanelHeader>
-      <div class="d-flex align-items-center justify-content-between">
-        <button ngbPanelToggle class="btn btn-link container-fluid text-left pl-0">Third panel</button>
-        <p *ngIf="disabled" class="text-muted m-0 small">[I'm&nbsp;disabled]</p>
-      </div>
+  </ngb-tab>
+  <ngb-tab title="A very long nav title">
+    <ng-template ngbTabContent>
+      <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
+        Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
+        Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
+        egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
+        tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
+        magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
+        neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
     </ng-template>
-    <ng-template ngbPanelContent>
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
-      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-      labore sustainable VHS.
-    </ng-template>
-  </ngb-panel> -->
+  </ngb-tab>
+</ngb-tabset>
