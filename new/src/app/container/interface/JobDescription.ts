@@ -22,6 +22,7 @@ export interface JobDescription {
   description: Array < string | number > ;
   color: string;
   id: string;
+  jobSkills: Array < string | number > ;
 }
 
 /**

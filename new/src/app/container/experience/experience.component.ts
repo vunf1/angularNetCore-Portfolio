@@ -17,8 +17,9 @@ export class ExperienceComponent implements OnInit {
   public wConSole: any = wConSole;
   public eConSole: any = eConSole;
   public iConSole: any = iConSole;
-  public currentJustify = "center"; // ng table set centra os elementos no centro
-  public escondeElement: any = escondeElement;
+  public currentJustify = "center"; // ngb-tabset centra os elementos no centro do container
+  public escondeElement = escondeElement;
+
   public componentTitle: string = "Experience";
   public jobsElement: JobDescription[] = [
     /** 0 - Autonomous Self */
@@ -29,6 +30,7 @@ export class ExperienceComponent implements OnInit {
       description: ["While I am on the computer I put more knowledge about hardware/software/web/network development depends on the need of what I want to do, every day I learn something new, I do what I like and it makes me happy. I have knowledge (medium) of various areas for when I need such skills am prepared."],
       color: "white",
       id: "job-0",
+      jobSkills:["cSharp", "Java"]
     },
     /** 1 */
     {
@@ -38,6 +40,7 @@ export class ExperienceComponent implements OnInit {
       description: ["Somewhere in the hills was found a prime and broke it in half after lost seing of"],
       color: "red",
       id: "job-1",
+      jobSkills:["cPluspluS", "JavaScript"]
     },
   ];
   constructor() {
