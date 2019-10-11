@@ -86,14 +86,14 @@
 
 <details>
 <summary>routing:</summary>
-<p>
+<code>
 appModule [ 
   headerComponent,
    [about,experience],
   footer
-]</p>
+]</code>
 </details>
----
+
 
 ### Finished
 - [x] Github set up 
