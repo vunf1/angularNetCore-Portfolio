@@ -82,7 +82,18 @@
  -[ ] Design
  -[ ] Content
       
+---
 
+<details>
+<summary>routing:</summary>
+<p>
+appModule [ 
+  headerComponent,
+   [about,experience],
+  footer
+]</p>
+</details>
+---
 
 ### Finished
 - [x] Github set up 
@@ -108,4 +119,3 @@
 |<a  href="https://twitter.com/wannabevunf1"><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  | 
 
 
-</Detail>
