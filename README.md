@@ -1,88 +1,86 @@
-<Detail>
-  <summary>Portfolio Angular TypeScript</summary>
+<details>
+<summary>Portfolio Angular TypeScript</summary>
   # Koa Angular JWT
-
-### Desertation Tests
-
+</details>
 
 ## Need TO install on linux/windows/mac:
+
 ##### :exclamation: VSCode
-- [Download](https://code.visualstudio.com/Download)
-##### :exclamation: npm
-- [Get npm](https://www.npmjs.com/get-npm)
-##### :exclamation: NodeJS 
-- easy method install , <code>npm i -g n</code>
-- easy method specify version, <code>npm  n < wanted version >, or npm  n@latest, or npm n </code>
 
+-   [Download](https://code.visualstudio.com/Download)
+    ##### :exclamation: npm
+-   [Get npm](https://www.npmjs.com/get-npm)
+    ##### :exclamation: NodeJS
+-   easy method install , <code>npm i -g n</code>
+-   easy method specify version, <code>npm  n &lt; wanted version >, or npm  n@latest, or npm n </code>
 
-#### after npm and nodejs installed, root folder and execute 
+#### after npm and nodejs installed, root folder and execute
+
 #### <code>npm i</code>
-#### <code>npm run < method from package file ></code>
----
 
+#### <code>npm run &lt; method from package file ></code>
+
+* * *
 
 ### :bust_in_silhouette: Github commands:
 
 ###### config your console with yout github account for correct commits
 
-> git config --global user.email "< uni  email >"
+> git config --global user.email "&lt; uni  email >"
+>
+> git config --global user.name "&lt; uni  email  without  @uni.coventry.ac.uk>"
 
-> git config --global user.name "< uni  email  without  @uni.coventry.ac.uk>"
+* * *
 
----
-> git checkout < branch >
----
-
-> git add <name  files  to  add  (your  file(s)  or  -A  #all#  )  <br>
-
-> git commit -m "<text,  try  write  something  about  you  have  done(Good  pratice)>"
-
+> ## git checkout &lt; branch >
+>
+> git add &lt;name  files  to  add  (your  file(s)  or  -A  #all#  )  <br>
+>
+> git commit -m "&lt;text,  try  write  something  about  you  have  done(Good  pratice)>"
+>
 > git push
 
-  
-  
-  
+### :anger:BUGS FOUND:anger:
 
-###  :anger:BUGS FOUND:anger:
+> -   [ ] none
 
->  -  [ ] none
-
----
+* * *
 
  **TO DO LIST**
 
-  
 # BackLog
-    
-  personal development plan [individual]
-    
-# TaskBoard
 
-> - [ ] 	About
- -[ ] Design
- -[x] Content
- 
-> - [ ] 	Experience
- -[ ] Design
- -[x] Content
- 
-> - [ ]  	Education
- -[ ] Design
- -[ ] Content
- 
-> - [ ]  	Skills
- -[ ] Design
- -[ ] Content
- 
-> - [ ]  	Interests
- -[ ] Design
- -[ ] Content
- 
-> - [ ]  	Live Projects
- -[ ] Design
- -[ ] Content
-      
----
+  personal development plan [individual]
+
+# TaskBoard
+### Components
+> -   [ ] About
+>     \-[ ] Design
+>     \-[x] Content
+> 
+> -   [ ] Experience
+>     \-[ ] Design
+>     \-[x] Content
+> 
+> -   [ ]     Education
+>     \-[ ] Design
+>     \-[ ] Content
+>
+> -   [ ] Skills
+>     \-[ ] Design
+>     \-[ ] Content
+>
+> -   [ ] Interests
+>     \-[ ] Design
+>     \-[ ] Content
+>
+> -   [ ] Live Projects
+>     \-[ ] Design
+>     \-[ ] Content
+
+
+* extract CV info from jsonDocument ( mongoDB or CosmosDB)
+* httpRequest triggers 1 element ?
 
 <details>
 <summary>routing:</summary>
@@ -94,28 +92,19 @@ appModule [
 ]</code>
 </details>
 
-
 ### Finished
-- [x] Github set up 
-- [ ] npm Dependencies Fix (tsc, rimraf) + npm audit fix
-    
-  
+
+-   [x] Github set up 
+-   [ ] npm Dependencies Fix (tsc, rimraf) + npm audit fix
+
 ###### Random Ideia for Project
 
-- [ ] something
-
-  
-  
+-   [ ] something
 
 ### EXTRA
- 
 
 ### Author
-  
 
-  
-|[Joao Maia ](https://github.coventry.ac.uk/deoiveij/)   |  
-|--|
-|<a  href="https://twitter.com/wannabevunf1"><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  | 
-
-
+\|[Joao Maia ](https://github.coventry.ac.uk/deoiveij/)   \|  
+\|--\|
+\|<a  href="https://twitter.com/wannabevunf1"><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  \| 
