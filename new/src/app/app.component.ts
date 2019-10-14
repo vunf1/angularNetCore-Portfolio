@@ -7,5 +7,5 @@ import {Component, OnDestroy} from "@angular/core";
   templateUrl: "./app.component.html",
 })
 export class AppComponent  {
-  public title = "OverKill Project v.0.1.0";
+  public title = "OverKill Project v.0.3.0";
 }

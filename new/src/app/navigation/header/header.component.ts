@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from "@angular/core";
-import { NavTitles } from "../../container/interface/JobDescription";
+import { NavTitles } from "../../interface/JobDescription";
 @Component({
   selector: "apr-header",
   templateUrl: "./header.component.html",

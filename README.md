@@ -54,29 +54,31 @@
 
 # TaskBoard
 ### Components
-> -   [ ] About
->     \-[ ] Design
->     \-[x] Content
-> 
+
+- [ ] About
+--[ ] Design
+--[x] Content
+
+ 
 > -   [ ] Experience
->     \-[ ] Design
->     \-[x] Content
-> 
+  --[ ] Design
+  --[x] Content
+ 
 > -   [ ]     Education
->     \-[ ] Design
->     \-[ ] Content
->
+  --[ ] Design
+  --[ ] Content
+
 > -   [ ] Skills
->     \-[ ] Design
->     \-[ ] Content
->
+  --[ ] Design
+  --[ ] Content
+
 > -   [ ] Interests
->     \-[ ] Design
->     \-[ ] Content
->
+  --[ ] Design
+  --[ ] Content
+
 > -   [ ] Live Projects
->     \-[ ] Design
->     \-[ ] Content
+  --[ ] Design
+  --[ ] Content
 
 
 * extract CV info from jsonDocument ( mongoDB or CosmosDB)
