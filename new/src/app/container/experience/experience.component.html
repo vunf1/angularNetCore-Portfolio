@@ -4,12 +4,13 @@
   </h2>
   <article id="experience">
 
-    <ngb-accordion *ngFor="let data of jobsElement" #a="ngbAccordion" activeIds="custom-panel-1" id="accordionTotal">
-      <ngb-panel id="{{data.id}}">
-        <ng-template ngbPanelHeader let-opened="opened">
-          <header class="d-flex align-items-center justify-content-between border-0">
+    <ngb-accordion *ngFor="let data of jobsElement" id="accordionTotal" >
+      <ngb-panel id="{{data.id}}" >
+        
+        <ng-template ngbPanelHeader let-opened="opened"  >
+          <header class="d-flex align-items-center justify-content-between border-0" >
 
-            <button ngbPanelToggle class="btn border-0 container-fluid text-left titleAccord ">
+            <button ngbPanelToggle class="btn border-0 container-fluid text-left titleAccord " >
               {{data.jobTitle}}<br>{{data.jobLocal}}
               <h3 class="btn border-0 float-right ">
                 {{ data.date}}</h3>
@@ -17,27 +18,32 @@
 
           </header>
         </ng-template>
+
         <ng-template ngbPanelContent>
 
           <ngb-tabset [justify]="currentJustify">
-            <ngb-tab>
-              <ng-template ngbTabTitle><b>Skills</b></ng-template>
-              <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin
-                coffee squid.
-                <p>{{data.description}}</p>
-              </ng-template>
-            </ngb-tab>
+
             <ngb-tab>
               <ng-template ngbTabTitle><b>Description</b></ng-template>
               <ng-template ngbTabContent>
-                <p>{{data.description}}</p>
+                <p>{{data.description[0]}}</p>
               </ng-template>
             </ngb-tab>
-          </ngb-tabset>
-        </ng-template>
 
+            <ngb-tab>
+              <ng-template ngbTabTitle><b>Skills</b></ng-template>
+              <ng-template ngbTabContent>
+                <p>{{data.description[1]}}</p>
+              </ng-template>
+            </ngb-tab>
+
+          </ngb-tabset>
+
+        </ng-template>
+        
       </ngb-panel>
-    </ngb-accordion>
+    </ngb-accordion> 
+    
   </article>
 
 </section>

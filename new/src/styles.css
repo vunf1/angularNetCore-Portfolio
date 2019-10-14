@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+.suposttoHideBorder,
+.card,
+.card-header {
+  background: transparent;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+
+}
+
+.card:hover {
+  color: yellowgreen;
+
+}
+
+.titleAccord:focus,
+.titleAccord:active,
+.card>.tab {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.accordion>.card {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+::ng-deep .suposttoHideBorder,
+.card {
+
+  border-bottom: 0px solid rgba(114, 110, 110, 0.125) !important;
+  border: 0 !important;
+
+  border: none !important;
+  outline: none !important;
+
+}
