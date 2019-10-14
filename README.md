@@ -1,12 +1,27 @@
 <details>
 <summary> Portfolio </summary>
    Angular + Bootstrap + CSS 
-   <br>TypeScript Lint 
+   <br>Angular TS Lint Rules 
    <br>C# Server Side (not fully implemented yet) 
   personal development plan
 </details>
+
+
+##### Indice
+- [BackLog](#backlog)
+    - [TaskBoard](#taskboard)
+    - [Components](#components)
+        - [About](#about)
+        - [Experience](#experience)
+        - [Education](#education)
+        - [Skills](#skills)
+        - [Interests](#interests)
+        - [Live Projects](#live-projects)
+    - [Finished](#finished)
+          - [Random Ideia for Project](#random-ideia-for-project)
+
+
 ## Need TO install on linux/windows/mac:
-  
 ##### VSCode
 
 - [Download](https://code.visualstudio.com/Download)
@@ -15,8 +30,10 @@
 
 [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) formatter JSON HTML CSS JS +-TS
 
+
 ##### :exclamation: npm
 -   [Get npm](https://www.npmjs.com/get-npm)
+
 ##### :exclamation: NodeJS
 -   easy method install node, <code>npm i -g n</code>
 -   easy method specify version, <code>npm  n &lt; wanted version >, or npm  n@latest, or npm n </code>
@@ -34,17 +51,17 @@
 ###### config console with yout github account for correct commits
 
 <code>git config --global user.email "&lt; email >"</code>
-<code>git config --global user.name " " </code>
-<code>git checkout  branch </code> 
-<code>git add &lt;name  files  to  add  (your  file/folder(s)(Good  pratice)  or  -A  #all#  )</code>
-<code>git commit -m "&lt;text,  try  write  something  about  you  have  done</code>
-<code>git push</code>
+<br><code>git config --global user.name " " </code>
+<br><code>git checkout  branch </code> 
+<br><code>git add &lt;name  files  to  add  (your  file/folder(s)(Good  pratice)  or  -A  #all#  )</code>
+<br><code>git commit -m "&lt;text,  try  write  something  about  you  have  done</code>
+<br><code>git push</code>
 
 * * *
 
 ### :anger:BUGS FOUND:anger:
 
->    none found - front end been develop no server side requests yet
+>    none found - front end been develop, no server side requests yet
 
  **TO DO LIST**
 
@@ -54,10 +71,9 @@
 * * *
 # BackLog
 
-  
 
-### TaskBoard
-### Components
+### TaskBoard (#indice)
+### Components (#indice)
 ##### About
  - [ ] Design
  - [x] Content
@@ -77,8 +93,6 @@
 - [ ] Design
 - [ ] Content
 
-
-
 <details>
 <summary>routing:</summary>
 <code>
@@ -94,7 +108,7 @@ appModule [
 -   [x] Github set up 
 
 
-###### Random Ideia for Project
+###### [Random Ideia for Project](#indice)
 
 -   [ ] 
 

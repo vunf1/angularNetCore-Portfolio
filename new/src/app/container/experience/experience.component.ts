@@ -2,7 +2,6 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { JobDescription, escondeElement, wConSole, lConSole, eConSole, iConSole } from "../../interface/JobDescription";
 import {CommonModule} from "@angular/common";
-import { Color } from 'three';
 @Component({
   selector: "apr-experience",
   templateUrl: "./experience.component.html",
@@ -19,7 +18,6 @@ export class ExperienceComponent implements OnInit {
   public eConSole: any = eConSole;
   public iConSole: any = iConSole;
 
-  public enableColor: Color;
 
   public currentJustify = "center"; // ngb-tabset centra os titulos no centro do container
   public escondeElement = escondeElement; // old  triggerDiv
@@ -33,7 +31,7 @@ export class ExperienceComponent implements OnInit {
       jobLocal: ["Independent"],
       description: [
         "While I am on the computer I put more knowledge about hardware/software/web/network development depends on the need of what I want to do, every day I learn something new, I do what I like and it makes me happy. I have knowledge (medium) of various areas for when I need such skills am prepared."
-      ,"Acquired good bla bla bla bla bla bla bla bla bla bla"],
+      , "Acquired good bla bla bla bla bla bla bla bla bla bla"],
       color: "white",
       id: "job-0",
       jobSkills: ["cSharp", "Java"],
@@ -50,7 +48,7 @@ export class ExperienceComponent implements OnInit {
     },
   ];
   constructor() {
-    //this.enableColor.setRGB(255, 0 , 125);
+    // this.enableColor.setRGB(255, 0 , 125);
    }
   public ngOnInit() {
 

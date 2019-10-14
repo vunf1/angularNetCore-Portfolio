@@ -1,17 +1,8 @@
-mat-sidenav-container, mat-sidenav-content, mat-sidenav {
-  width: 100%;
-  overflow: auto;
-  outline: 0;
-}
-
-mat-sidenav {
-  height: 10%;
-}
-
-main {
-    padding: 10px;
-}
-#page-content-wrapper{
-  overflow:hidden;
-  overflow-y: hidden !important
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
 }

@@ -8,7 +8,7 @@
 // tslint:disable-next-line: class-name
 // tslint:disable-next-line: no-unused-expression
 
-import * as THREE  from "node_modules/three/src/Three";
+import * as THREE from "node_modules/three/src/Three";
 import * as GLTFLoader from "node_modules/three/examples/jsm/loaders/GLTFLoader";
 import * as OrbitControls from "node_modules/three/examples/jsm/loaders/OBJLoader";
 
@@ -120,8 +120,8 @@ class TD_class  {
 
     };
 
-    // the loader will report the loading progress to this 
-    const onProgress = (messages) => {};
+    // the loader will report the loading progress to this
+    const onProgress = ( messages) => {};
 
     // the loader will send any error messages to this , and we'll log
     // them to to console
@@ -132,7 +132,7 @@ class TD_class  {
     // load the first model. Each model is loaded asynchronously,
     // so don't make any assumption about which one will finish loading first
     const imgObject = new THREE.Vector3(20, 40, 30);
-    loader.load("./assets/building/" + this.buildCode + ".gltf", gltf => onLoad(gltf, imgObject), onProgress,
+    loader.load("./assets/building/" + this.buildCode + ".gltf", (gltf ) => onLoad(gltf, imgObject), onProgress,
     onError);
     console.log(imgObject);
 
@@ -152,11 +152,6 @@ class TD_class  {
     this.renderer.gammaOutput = true;
 
     this.renderer.physicallyCorrectLights = true;
-
-    //Low graphic use
-    this.renderer.BasicShadowMap;
-    this.renderer.NoToneMapping;
-    this.renderer.CullFaceNone;
 
     console.log(this.renderer.domElement);
     this.container.appendChild(this.renderer.domElement);

@@ -26,7 +26,7 @@ export const keyValue: NavTitles = {
   /**
    * ! SideBar Information
    */
-    me: ["Joao Maia", "me"],
+    me: ["Joao Maia", "me "],
     about: ["About Me", "about"],
     experience: ["Experience", "experience"],
     education: ["Education", "education"],

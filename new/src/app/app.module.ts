@@ -71,6 +71,10 @@ import {
   ExperienceComponent,
 } from "./container/experience/experience.component";
 
+import {
+  NavbarComponent,
+} from "./navigation/navbar/navbar.component";
+
 const appRoutes: Routes = [{
     path: "about",
     component: AboutComponent,
@@ -85,6 +89,7 @@ const appRoutes: Routes = [{
   declarations: [
     AppComponent,
     HeaderComponent,
+    NavbarComponent,
     AboutComponent,
     ExperienceComponent,
     SidebarComponent,
