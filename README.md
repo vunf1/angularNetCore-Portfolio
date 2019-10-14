@@ -1,86 +1,83 @@
 <details>
-<summary>Portfolio Angular TypeScript</summary>
-  # Koa Angular JWT
+<summary> Portfolio </summary>
+   Angular + Bootstrap + CSS 
+   <br>TypeScript Lint 
+   <br>C# Server Side (not fully implemented yet) 
+  personal development plan
 </details>
-
 ## Need TO install on linux/windows/mac:
+  
+##### VSCode
 
-##### :exclamation: VSCode
+- [Download](https://code.visualstudio.com/Download)
 
--   [Download](https://code.visualstudio.com/Download)
-    ##### :exclamation: npm
+<h6> Extension </h6>
+
+[Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) formatter JSON HTML CSS JS +-TS
+
+##### :exclamation: npm
 -   [Get npm](https://www.npmjs.com/get-npm)
-    ##### :exclamation: NodeJS
--   easy method install , <code>npm i -g n</code>
+##### :exclamation: NodeJS
+-   easy method install node, <code>npm i -g n</code>
 -   easy method specify version, <code>npm  n &lt; wanted version >, or npm  n@latest, or npm n </code>
 
-#### after npm and nodejs installed, root folder and execute
-
+#### after npm and nodejs installed, project folder and execute
 #### <code>npm i</code>
-
-#### <code>npm run &lt; method from package file ></code>
+###### :point_right: OnInit - Possible, npm Dependencies Fix (tsc, rimraf) read Output 
+#### :point_right: <code>npm audit fix</code>
+#### <code>npm run &lt; method from package.json file ></code>
 
 * * *
 
 ### :bust_in_silhouette: Github commands:
 
-###### config your console with yout github account for correct commits
+###### config console with yout github account for correct commits
 
-> git config --global user.email "&lt; uni  email >"
->
-> git config --global user.name "&lt; uni  email  without  @uni.coventry.ac.uk>"
+<code>git config --global user.email "&lt; email >"</code>
+<code>git config --global user.name " " </code>
+<code>git checkout  branch </code> 
+<code>git add &lt;name  files  to  add  (your  file/folder(s)(Good  pratice)  or  -A  #all#  )</code>
+<code>git commit -m "&lt;text,  try  write  something  about  you  have  done</code>
+<code>git push</code>
 
 * * *
-
-> ## git checkout &lt; branch >
->
-> git add &lt;name  files  to  add  (your  file(s)  or  -A  #all#  )  <br>
->
-> git commit -m "&lt;text,  try  write  something  about  you  have  done(Good  pratice)>"
->
-> git push
 
 ### :anger:BUGS FOUND:anger:
 
-> -   [ ] none
-
-* * *
+>    none found - front end been develop no server side requests yet
 
  **TO DO LIST**
 
+* extract CV info from jsonDocument ( mongoDB or CosmosDB)
+* httpRequest, typescript load components by click  - menu 
+
+* * *
 # BackLog
 
-  personal development plan [individual]
+  
 
-# TaskBoard
+### TaskBoard
 ### Components
-> -   [ ] About
->     \-[ ] Design
->     \-[x] Content
-> 
-> -   [ ] Experience
->     \-[ ] Design
->     \-[x] Content
-> 
-> -   [ ]     Education
->     \-[ ] Design
->     \-[ ] Content
->
-> -   [ ] Skills
->     \-[ ] Design
->     \-[ ] Content
->
-> -   [ ] Interests
->     \-[ ] Design
->     \-[ ] Content
->
-> -   [ ] Live Projects
->     \-[ ] Design
->     \-[ ] Content
+##### About
+ - [ ] Design
+ - [x] Content
+##### Experience
+- [ ] Design
+- [x] Content
+##### Education
+- [ ] Design
+- [ ] Content
+##### Skills
+- [ ] Design
+- [ ] Content
+##### Interests
+- [ ] Design
+- [ ] Content
+##### Live Projects
+- [ ] Design
+- [ ] Content
 
 
-* extract CV info from jsonDocument ( mongoDB or CosmosDB)
-* httpRequest triggers 1 element ?
 
 <details>
 <summary>routing:</summary>
@@ -95,16 +92,15 @@ appModule [
 ### Finished
 
 -   [x] Github set up 
--   [ ] npm Dependencies Fix (tsc, rimraf) + npm audit fix
+
 
 ###### Random Ideia for Project
 
--   [ ] something
+-   [ ] 
 
-### EXTRA
 
-### Author
 
-\|[Joao Maia ](https://github.coventry.ac.uk/deoiveij/)   \|  
-\|--\|
-\|<a  href="https://twitter.com/wannabevunf1"><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  \| 
+
+|Author|  
+|--|
+|<a  href="https://twitter.com/wannabevunf1">[_Joao Maia _ ](https://github.coventry.ac.uk/deoiveij/)<br><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  | 
