@@ -1,9 +1,8 @@
 // ! EXPERIENCE BOX
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { JobDescription} from "../../interface/JobDescription";
 import { ConsolaBrowser, escondeElement} from "../../interface/sharedMethods";
 
-import {CommonModule} from "@angular/common";
 @Component({
   selector: "apr-experience",
   templateUrl: "./experience.component.html",
@@ -24,7 +23,7 @@ export class ExperienceComponent implements OnInit {
   public jobsElement: JobDescription[] = [
     /** 0 - Autonomous Self */
     {
-      jobTitle: ["Autonomous Self - Studying Computer Concepts - lifetime passion"],
+      jobTitle: ["Autonomous Self - Study Computer Concepts - lifetime passion"],
       date: ["June 2010 - Present"],
       jobLocal: ["Independent"],
       description: [

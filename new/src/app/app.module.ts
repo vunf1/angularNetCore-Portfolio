@@ -57,8 +57,8 @@ import {
   MatTableModule,
   MatTabsModule,
   MatToolbarModule,
-  MatTooltipModule
-} from '@angular/material';
+  MatTooltipModule,
+} from "@angular/material";
 // import {
 //   MatSidenavModule,
 // } from "@angular/material/sidenav";

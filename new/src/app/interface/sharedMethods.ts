@@ -55,7 +55,6 @@ export class CustomAlert {
 
   }
 
-
 }
 
 // tslint:disable-next-line: max-classes-per-file

@@ -1,8 +1,12 @@
-<mat-toolbar color="primary" >
+<mat-toolbar color="secondary" >
     <mat-toolbar-row>
-        <span>Third Line</span>
-        <span class="icon-right"></span>
 
-        <mat-icon class="icon-padding" aria-hidden="false" aria-label="Example delete icon">face</mat-icon>
-      </mat-toolbar-row>
+      <span class="icon-right"></span>
+
+      <mat-icon mat-button [matMenuTriggerFor]="menu" class="icon-padding" aria-hidden="false" aria-label="Example menu icon">menu</mat-icon>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+    </mat-toolbar-row>
   </mat-toolbar>

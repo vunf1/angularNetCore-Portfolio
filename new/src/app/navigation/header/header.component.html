@@ -30,11 +30,14 @@
   <mat-toolbar class="example-header textCentered">Header</mat-toolbar>
   <mat-sidenav-container class="example-container ">
     <mat-list *ngFor="let title of navTitlesList">
+
+        <mat-divider></mat-divider>
       <a (click)="some()">
         {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
       </a>
+      <mat-divider></mat-divider>
     </mat-list>
   </mat-sidenav-container>
 
-  <mat-toolbar class="example-footer">Footer</mat-toolbar>
+  <mat-toolbar class="example-footer" >Footer</mat-toolbar>
 </ng-container>

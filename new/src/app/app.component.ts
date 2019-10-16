@@ -12,9 +12,9 @@ import {Component, OnDestroy, HostListener, OnInit} from "@angular/core";
 export class AppComponent implements OnInit  {
   public title = "OverKill Project v.0.3.0";
 
-  triggerNavigation: string;
-  screenWidth: number;
-  screenHeight: number;
+  public triggerNavigation: string;
+  public screenWidth: number;
+  public screenHeight: number;
 
   public ngOnInit() {
     this.onResize();
