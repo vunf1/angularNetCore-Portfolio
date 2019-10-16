@@ -11,17 +11,21 @@ import {Component, OnDestroy, HostListener, OnInit} from "@angular/core";
 })
 export class AppComponent implements OnInit  {
   public title = "OverKill Project v.0.3.0";
-  screenWidth: any;
-  screenHeight: any;
-  public ngOnInit() {
 
+  triggerNavigation: boolean;
+  screenWidth: number;
+  screenHeight: number;
+
+  public ngOnInit() {
   }
   @HostListener("window:resize", ["$event"])
   public onResize(event?) {
      this.screenHeight = window.innerHeight;
      this.screenWidth = window.innerWidth;
      if (this.screenWidth < 790) {
-       alert("oi");
+      this.triggerNavigation = true;
+     } else {
+      this.triggerNavigation = false;
      }
   }
 }

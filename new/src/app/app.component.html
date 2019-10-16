@@ -15,9 +15,9 @@
   </main>
 </section> -->
 <mat-sidenav-container class="example-container" >
-    <!-- <mat-sidenav mode="side" opened>
+    <mat-sidenav *ngIf="triggerNavigation ; else !triggerNavigation " mode="side" opened>
         <apr-header></apr-header>
-    </mat-sidenav> -->
+    </mat-sidenav>
     <mat-sidenav-content>
         <apr-navbar></apr-navbar>
     <!-- <apr-about></apr-about> -->
