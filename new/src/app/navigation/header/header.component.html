@@ -1,12 +1,12 @@
 <!-- ![ENGLISH]!  -->
 
-<header class="bg-dark border-none" id="sidebar-wrapper">
+<!-- <header class="bg-dark border-none" [ngStyle]="{ height:100%, color: 'green' }" id="sidebar-wrapper" >
   <h3 class="sidebar-heading bg-gradient-dark text-white">Joao Maia</h3>
   <ul class="list-group list-group-flush">
     <a class="list-group-item list-group-item-action bg-secondary text-white">
       JJJJJ</a>
   </ul>
-  </header>
+  </header> -->
 
 <!--
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -26,3 +26,15 @@
   </ul>
 </nav> -->
 
+<ng-container>
+  <mat-toolbar class="example-header textCentered">Header</mat-toolbar>
+  <mat-sidenav-container class="example-container ">
+    <mat-list *ngFor="let title of navTitlesList">
+      <a (click)="some()">
+        {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
+      </a>
+    </mat-list>
+  </mat-sidenav-container>
+
+  <mat-toolbar class="example-footer">Footer</mat-toolbar>
+</ng-container>

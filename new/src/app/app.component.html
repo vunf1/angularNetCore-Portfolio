@@ -15,12 +15,12 @@
   </main>
 </section> -->
 <mat-sidenav-container class="example-container" >
-    <mat-sidenav *ngIf="triggerNavigation ; else !triggerNavigation " mode="side" opened>
-        <apr-header></apr-header>
+    <mat-sidenav class="example-sidenav" *ngIf="triggerNavigation == 'header'" mode="side" opened>
+        <apr-header class="textCentered"></apr-header>
     </mat-sidenav>
-    <mat-sidenav-content>
-        <apr-navbar></apr-navbar>
-    <!-- <apr-about></apr-about> -->
-    <apr-experience></apr-experience>
+    <mat-sidenav-content class="textCentered">
+        <apr-navbar *ngIf="triggerNavigation == 'topbar'"  ></apr-navbar>
+    <!-- <apr-about></apr-about>
+    <apr-experience></apr-experience> -->
     </mat-sidenav-content>
   </mat-sidenav-container>

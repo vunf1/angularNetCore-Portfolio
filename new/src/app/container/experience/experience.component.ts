@@ -1,6 +1,8 @@
 // ! EXPERIENCE BOX
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { JobDescription, escondeElement, wConSole, lConSole, eConSole, iConSole } from "../../interface/JobDescription";
+import { JobDescription} from "../../interface/JobDescription";
+import { ConsolaBrowser, escondeElement} from "../../interface/sharedMethods";
+
 import {CommonModule} from "@angular/common";
 @Component({
   selector: "apr-experience",
@@ -13,11 +15,7 @@ export class ExperienceComponent implements OnInit {
   *
   * ! CONSOLAS
   */
-  public lConSole: any = lConSole;
-  public wConSole: any = wConSole;
-  public eConSole: any = eConSole;
-  public iConSole: any = iConSole;
-
+  public console: ConsolaBrowser;
 
   public currentJustify = "center"; // ngb-tabset centra os titulos no centro do container
   public escondeElement = escondeElement; // old  triggerDiv

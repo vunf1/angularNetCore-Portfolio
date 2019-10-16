@@ -6,3 +6,9 @@
   right: 0;
   background: #eee;
 }
+.example-sidenav{
+  width: 16%;
+}
+.textCentered{
+  text-align: center;
+}

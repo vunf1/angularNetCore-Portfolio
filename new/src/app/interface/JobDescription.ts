@@ -56,29 +56,3 @@ export interface NavTitles {
   certifications: Array < string | number > ;
   projects: Array < string | number > ;
 }
-/**
- *
- *  Muda o estado do elemento para ficar visivel
- *  o element (agarra o id do child) quando clicado (Melhoria possivel)
- *
- */
-export function escondeElement(id: string): void {
-  const element = document.getElementById(id);
-  if (element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    element.style.display = "none";
-  }
-}
-export function  wConSole(string: any) {
-  console.warn(string);
-}
-export function  lConSole(string: any) {
-  console.log(string);
-}
-export function  eConSole(string: any) {
-  console.error(string);
-}
-export function  iConSole(string: any) {
-  console.info(string);
-}

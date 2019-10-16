@@ -19,6 +19,7 @@
     "no-empty":false,
     "interface-name":false,
     "variable-name":false,
+    "disable-next-line": "max-classes-per-file",
     "directive-selector": [
       true,
       "attribute",

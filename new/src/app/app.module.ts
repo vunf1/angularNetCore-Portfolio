@@ -29,29 +29,60 @@ import {
  * MATERIALS
  */
 import {
-  MatSidenavModule,
-} from "@angular/material/sidenav";
-import {
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatExpansionModule,
+  MatGridListModule,
   MatIconModule,
-} from "@angular/material/icon";
-import {
-  MatToolbarModule,
-} from "@angular/material/toolbar";
-import {
+  MatInputModule,
   MatListModule,
-} from "@angular/material/list";
+  MatMenuModule,
+  MatNativeDateModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatStepperModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule
+} from '@angular/material';
+// import {
+//   MatSidenavModule,
+// } from "@angular/material/sidenav";
+// import {
+//   MatIconModule,
+// } from "@angular/material/icon";
+// import {
+//   MatToolbarModule,
+// } from "@angular/material/toolbar";
+// import {
+//   MatListModule,
+// } from "@angular/material/list";
 import {
   LayoutModule,
 } from "@angular/cdk/layout";
-import {
-  MatGridListModule,
-} from "@angular/material/grid-list";
-import {
-  MatExpansionModule,
-} from "@angular/material/expansion";
-import {
-  MatButtonModule,
-} from "@angular/material";
+// import {
+//   MatGridListModule,
+// } from "@angular/material/grid-list";
+// import {
+//   MatExpansionModule,
+// } from "@angular/material/expansion";
+// import {
+//   MatButtonModule,
+// } from "@angular/material";
 
 /** ! Independent */
 import {
@@ -97,16 +128,38 @@ const appRoutes: Routes = [{
   imports: [
     NgbModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatListModule,
     LayoutModule,
-    MatGridListModule,
     CommonModule,
     BrowserModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
     MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatStepperModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false }, // <-- debugging purposes only (true)
@@ -114,12 +167,36 @@ const appRoutes: Routes = [{
   ],
   exports: [
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatListModule,
     LayoutModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatStepperModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
   ],
   bootstrap: [AppComponent],
 })

@@ -1,6 +1,6 @@
 <details>
 <summary> Portfolio </summary>
-   Angular + Bootstrap + CSS 
+   Angular Material + Bootstrap CSS 
    <br>Angular TS Lint Rules 
    <br>C# Server Side (not fully implemented yet) 
   personal development plan
@@ -9,14 +9,17 @@
 
 ##### Indice
 - [BackLog](#backlog)
-    - [TaskBoard (#indice)](#taskboard-indice)
-    - [Components (#indice)](#components-indice)
+    - [TaskBoard](#taskboard)
+    - [Components](#components)
+        - [Sidenav](#sidenav)
+        - [Topnav](#topnav)
         - [About](#about)
         - [Experience](#experience)
         - [Education](#education)
         - [Skills](#skills)
         - [Interests](#interests)
         - [Live Projects](#live-projects)
+  - [- [ ] Content](#content)
     - [Finished](#finished)
           - [Random Ideia for Project](#random-ideia-for-project)
 
@@ -31,13 +34,13 @@
 [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) formatter JSON HTML CSS JS +-TS
 
 
-##### :exclamation: npm
+### :exclamation: npm
 -   [Get npm](https://www.npmjs.com/get-npm)
+#### Dependencies <code>npm i </code>
+> - [ Angular 8 ]()
+> - [ AlertifyJS ]()
 
-###### Dependencies
-- [ Angular 8 ]()
-
-##### :exclamation: NodeJS
+### :exclamation: NodeJS
 -   easy method install node, <code>npm i -g n</code>
 -   easy method specify version, <code>npm  n &lt; wanted version >, or npm  n@latest, or npm n </code>
 
@@ -57,26 +60,32 @@
 <br><code>git config --global user.name " " </code>
 <br><code>git checkout  branch </code> 
 <br><code>git add &lt;name  files  to  add  (your  file/folder(s)(Good  pratice)  or  -A  #all#  )</code>
-<br><code>git commit -m "&lt;text,  try  write  something  about  you  have  done</code>
+<br><code>git commit -m "&lt;text,  write  something  the work done"</code>
 <br><code>git push</code>
 
 * * *
 
-### :anger:BUGS FOUND:anger:
+### :anger: BUGS FOUND :anger:
 
 >    none found - front end been develop, no server side requests yet
 
  **TO DO LIST**
 
-* extract CV info from jsonDocument ( mongoDB or CosmosDB)
-* httpRequest, typescript load components by click  - menu 
+> extract CV info from jsonDocument ( mongoDB or CosmosDB)
+> <br>httpRequest, typescript load components by click  - menu 
 
 * * *
 # BackLog
 
 
-### TaskBoard (#indice)
-### Components (#indice)
+### [TaskBoard](#indice)
+### [Components](#indice)
+##### Sidenav
+ - [ ] Design
+ - [x] Content
+##### Topnav
+ - [ ] Design
+ - [x] Content
 ##### About
  - [ ] Design
  - [x] Content
@@ -95,15 +104,18 @@
 ##### Live Projects
 - [ ] Design
 - [ ] Content
+--- 
 
 <details>
-<summary>routing:</summary>
+
+<summary>Components routing:</summary>
+
 <code>
-appModule [ 
-  headerComponent,
-   [about,experience],
-  footer
-]</code>
+<br>appModule [ 
+  <br>    [headerComponent, navbarComponent],
+   <br>    [aboutComponent, experienceComponent]
+<br>]</code>
+
 </details>
 
 ### Finished
