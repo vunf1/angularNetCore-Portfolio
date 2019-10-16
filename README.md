@@ -9,8 +9,8 @@
 
 ##### Indice
 - [BackLog](#backlog)
-    - [TaskBoard](#taskboard)
-    - [Components](#components)
+    - [TaskBoard (#indice)](#taskboard-indice)
+    - [Components (#indice)](#components-indice)
         - [About](#about)
         - [Experience](#experience)
         - [Education](#education)
@@ -33,6 +33,9 @@
 
 ##### :exclamation: npm
 -   [Get npm](https://www.npmjs.com/get-npm)
+
+###### Dependencies
+- [ Angular 8 ]()
 
 ##### :exclamation: NodeJS
 -   easy method install node, <code>npm i -g n</code>
