@@ -27,32 +27,46 @@ export function escondeElement(id: string): void {
  */
 export class CustomAlert {
 
+  public checker: boolean;
   constructor(logPosition: string) {
 
     alertify.logPosition(logPosition);
     alertify.maxLogItems(0);
+
   }
 
-  public alertLogSuccess(string_html: any) {
+  public NotificationSuccess(string_html: any) {
     alertify.maxLogItems(1);
     alertify
       .success(string_html);
   }
 
-  public alertLogError(string_html: any) {
+  public NotificationError(string_html: any) {
     alertify
       .error(string_html);
   }
 
-  public alertModalOK(string_html: any) {
+  public ModalOK(string_html: any) {
     alertify
       .alert(
         "<h1>Ola</h1>" + string_html, "OIOI" + string_html);
   }
 
-  public alertDialogOK(string_html: any) {
-    alertify.alert("Alert Title").setHeader("<h2>Ola</h2>");
-
+  public ConfirmDialog(string_html: string, promise: any) {
+    /**
+     * not working properly
+     */
+    alertify.confirm(string_html,
+      (err, data) => {
+        alertify.success(err);
+        alertify.success(data);
+        this.checker = true;
+      },
+      () => {
+        alertify.error("Cancel");
+        this.checker = false;
+      });
+    return  ;
   }
 
 }

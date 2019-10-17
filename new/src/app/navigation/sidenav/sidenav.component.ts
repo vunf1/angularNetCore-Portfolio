@@ -3,13 +3,13 @@ import { NavTitles} from "../../interface/JobDescription";
 import { ConsolaBrowser, escondeElement, CustomAlert} from "../../interface/sharedMethods";
 import { navTitlesList } from "../constants_shared";
 @Component({
-  selector: "apr-header",
-  templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.css"],
+  selector: "apr-sidenav",
+  templateUrl: "./sidenav.component.html",
+  styleUrls: ["./sidenav.component.css"],
 })
-export class HeaderComponent implements OnInit {
+export class SidenavComponent implements OnInit {
   public consoleS = new ConsolaBrowser();
-  public alert = new CustomAlert("top left");
+  public alert = new CustomAlert("bottom right");
   public screenHeight: any;
   public screenWidth: any;
   public navTitlesList: string[] = navTitlesList;
@@ -17,12 +17,12 @@ export class HeaderComponent implements OnInit {
 
    }
   public ngOnInit() {
-    console.log("header - ON");
+    console.log("sidenav - ON");
 
   }
 
-  public some() {
-    this.alert.alertModalOK("OKEY");
+  public some(title) {
+    this.alert.NotificationSuccess(title);
 
   }
 

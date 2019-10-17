@@ -27,17 +27,23 @@
 </nav> -->
 
 <ng-container>
-  <mat-toolbar class="example-header textCentered">Header</mat-toolbar>
+  <mat-toolbar class="example-header">
+    <!-- SideNav Header  Block -->
+    <a> Header </a>
+
+  </mat-toolbar>
   <mat-sidenav-container class="example-container ">
     <mat-list *ngFor="let title of navTitlesList">
 
-        <mat-divider></mat-divider>
-      <a (click)="some()">
+    <!-- SideNav Body  Block -->
+      <a (click)="some(title)">
         {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
       </a>
-      <mat-divider></mat-divider>
     </mat-list>
   </mat-sidenav-container>
 
-  <mat-toolbar class="example-footer" >Footer</mat-toolbar>
+  <mat-toolbar class="example-footer">
+    <!-- SideNav Footer  Block -->
+    <h6>footer</h6>
+  </mat-toolbar>
 </ng-container>

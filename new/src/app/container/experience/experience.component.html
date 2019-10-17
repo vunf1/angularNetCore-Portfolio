@@ -24,6 +24,7 @@
 
           <ngb-tabset [justify]="currentJustify">
 
+
             <ngb-tab>
               <ng-template ngbTabTitle><b>Description</b></ng-template>
               <ng-template ngbTabContent>
@@ -35,8 +36,15 @@
             <ngb-tab>
               <ng-template ngbTabTitle><b>Skills</b></ng-template>
               <ng-template ngbTabContent>
-                <p>{{data.jobSkills[0]}}</p>
-                <p>{{data.jobSkills[1]}}</p>
+                <mat-grid-list cols="2" rowHeight="2:1">
+                  <!-- 2 col 2 rows -->
+                  <mat-grid-tile>
+                    <p>{{data.jobSkills[0]}}</p>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                    <p>{{data.jobSkills[1]}}</p>
+                  </mat-grid-tile>
+                </mat-grid-list>
               </ng-template>
             </ngb-tab>
 

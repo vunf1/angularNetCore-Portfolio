@@ -16,7 +16,7 @@ export class ExperienceComponent implements OnInit {
   */
   public console: ConsolaBrowser;
 
-  public currentJustify = "center"; // ngb-tabset centra os titulos no centro do container
+  public currentJustify = "justify"; // ngb-tabset centra os titulos no centro do container
   public escondeElement = escondeElement; // old  triggerDiv
 
   public componentTitle: string = "Experience";

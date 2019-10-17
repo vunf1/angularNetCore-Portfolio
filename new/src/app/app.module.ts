@@ -89,12 +89,8 @@ import {
   AppComponent,
 } from "./app.component";
 import {
-  HeaderComponent,
-} from "./navigation/header/header.component";
-import {
-  SidebarComponent,
-} from "./navigation/sidebar/sidebar.component";
-
+  SidenavComponent,
+} from "./navigation/sidenav/sidenav.component";
 import {
   AboutComponent,
 } from "./container/about/about.component";
@@ -119,11 +115,10 @@ const appRoutes: Routes = [{
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    SidenavComponent,
     NavbarComponent,
     AboutComponent,
     ExperienceComponent,
-    SidebarComponent,
   ],
   imports: [
     NgbModule,

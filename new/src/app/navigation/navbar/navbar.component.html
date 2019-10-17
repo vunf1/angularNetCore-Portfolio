@@ -1,12 +1,38 @@
-<mat-toolbar color="secondary" >
-    <mat-toolbar-row>
+<!-- <mat-toolbar color="secondary">
+  <mat-toolbar-row>
 
-      <span class="icon-right"></span>
+    <span class="icon-right"></span>
 
-      <mat-icon mat-button [matMenuTriggerFor]="menu" class="icon-padding" aria-hidden="false" aria-label="Example menu icon">menu</mat-icon>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
-      </mat-menu>
-    </mat-toolbar-row>
-  </mat-toolbar>
+    <mat-icon mat-button [matMenuTriggerFor]="menu" class="icon-padding" aria-hidden="false"
+      aria-label="Example menu icon">menu</mat-icon>
+    <header class="btn-group icon-padding" ngbDropdown role="group">
+      <button class="btn" ngbDropdownToggle><mat-icon mat-button>menu</mat-icon></button>
+      <div class="dropdown-menu" ngbDropdownMenu *ngFor="let title of navTitlesList">
+        <a class="dropdown-item" ngbDropdownItem>{{title}}</a><br>
+      </div>
+    </header>
+  </mat-toolbar-row>
+</mat-toolbar> -->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <span (click)="tri()" class="navbar-brand">Header</span>
+    <button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+      <mat-icon >menu</mat-icon>
+    </button>
+
+    <section class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+        <object   ngbDropdown *ngFor="let title of navTitlesList">
+
+          <a style="cursor: pointer" ngbDropdownToggle id="{{title}}" role="button">
+            {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
+          </a>
+          <aside ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+            <a class="dropdown-item" href="#" (click)="$event.preventDefault()">{{title}}</a>
+          </aside>
+
+        </object>
+
+      </ul>
+    </section>
+  </nav>
