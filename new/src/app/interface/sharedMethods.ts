@@ -48,8 +48,7 @@ export class CustomAlert {
 
   public ModalOK(string_html: any) {
     alertify
-      .alert(
-        "<h1>Ola</h1>" + string_html, "OIOI" + string_html);
+      .alert(string_html);
   }
 
   public ConfirmDialog(string_html: string, promise: any) {

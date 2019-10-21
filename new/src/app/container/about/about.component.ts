@@ -1,10 +1,14 @@
 import { Component, OnInit } from "@angular/core";
+import * as emailCheck from "email-deep-validator";
+import {CustomAlert} from "../../interface/sharedMethods";
 @Component({
   selector: "apr-about",
   templateUrl: "./about.component.html",
   styleUrls: ["./about.component.css"],
 })
 export class AboutComponent implements OnInit {
+
+  public modal = new CustomAlert("top left");
 
 /**
  *
@@ -44,4 +48,8 @@ export class AboutComponent implements OnInit {
     console.log("About - ON");
   }
 
+  public triggerModal() {
+    this.modal.ModalOK("some");
+
+  }
 }

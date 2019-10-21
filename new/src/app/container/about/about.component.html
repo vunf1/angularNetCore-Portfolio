@@ -1,28 +1,30 @@
 <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-  <div class="my-auto">
+
+  <main class="my-auto">
     <h1 class="mb-0 .text-muted">{{aboutData.name[0]}}
       <span class="text-primary">{{aboutData.name[1]}}</span>
     </h1>
+    <a></a>
 
-    <div class="subheading mb-8 ">
+    <aside class="subheading mb-8 ">
 
-      <button style="width: 30%;height: 10%;" type="button" class="btn btn-info text-left" data-toggle="collapse"
+      <button type="button" class="btn btn-info text-left" data-toggle="collapse"
         data-target=".clickable">
         {{aboutData.addressTitle[0]}}</button>
 
-      <button style="width: 30%;height: 10%;" type="button" class="btn btn-success text-left" data-toggle="collapse"
+        <article class="subheading mb-8 collapse clickable">
+          <span class="fa fa-map-marker"></span>
+          {{aboutData.address[0]}}
+        </article>
+      <button type="button" class="btn btn-success text-left" data-toggle="collapse"
         data-target=".clickable2">
         {{aboutData.addressTitle[1]}}</button>
 
-      <div class="subheading mb-8 collapse clickable">
-        <span class="fa fa-map-marker"></span>
-        {{aboutData.address[0]}}
-      </div>
 
-      <div class="subheading mb-8 collapse clickable2">
+      <article class="subheading mb-8 collapse clickable2">
         <span class="fa fa-map-marker"></span>
         {{aboutData.address[1]}}
-      </div>
+      </article>
 
       <p>
         <span class="fa fa-phone"></span>
@@ -33,9 +35,9 @@
         </a>
       </p>
 
-    </div>
+    </aside>
     <br>
-    <p class="mb-2">Welcome to my Web-Portfolio</p>
+    <p (click)="triggerModal()"class="mb-2">Welcome to my Web-Portfolio</p>
 
 
     <ul class="list-inline list-social-icons ">
@@ -90,7 +92,7 @@
 
 
     <br>
-    <div class="subheading mb-2" style="color: darkblue">{{aboutData.softSkills[0]}}</div>
+    <header class="subheading mb-2" style="color: darkblue">{{aboutData.softSkills[0]}}</header>
     <br>
     <ul class="fa-ul mb-0" style="color: green;">
       <li>
@@ -119,6 +121,6 @@
       </li>
     </ul>
 
-  </div>
+  </main>
 
 </section>

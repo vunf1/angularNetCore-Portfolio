@@ -19,7 +19,6 @@
         - [Skills](#skills)
         - [Interests](#interests)
         - [Live Projects](#live-projects)
-  - [- [ ] Content](#content)
     - [Finished](#finished)
           - [Random Ideia for Project](#random-ideia-for-project)
 
@@ -77,6 +76,8 @@
 * * *
 # BackLog
 
+- [ ] major info [accessed by CATCH 'im not a robot' >>>> emailconfirmation(validation+valuation)]
+
 
 ### [TaskBoard](#indice)
 ### [Components](#indice)
@@ -104,6 +105,7 @@
 ##### Live Projects
 - [ ] Design
 - [ ] Content
+
 --- 
 
 <details>

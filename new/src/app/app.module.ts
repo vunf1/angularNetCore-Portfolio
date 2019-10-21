@@ -24,7 +24,8 @@ import {
 import {
   BrowserAnimationsModule,
 } from "@angular/platform-browser/animations"; /* Animacoes no browser  */
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 /**
  * MATERIALS
  */
@@ -101,6 +102,8 @@ import {
 import {
   NavbarComponent,
 } from "./navigation/navbar/navbar.component";
+import { EmailFormComponent } from "./validator/emailForm/emailForm.component";
+import { RecaptchaModule } from 'ng-recaptcha';
 
 const appRoutes: Routes = [{
     path: "about",
@@ -119,9 +122,11 @@ const appRoutes: Routes = [{
     NavbarComponent,
     AboutComponent,
     ExperienceComponent,
+    EmailFormComponent,
   ],
   imports: [
     NgbModule,
+    RecaptchaModule,
     BrowserAnimationsModule,
     LayoutModule,
     CommonModule,
@@ -155,6 +160,9 @@ const appRoutes: Routes = [{
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
+    AngularFontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false }, // <-- debugging purposes only (true)
