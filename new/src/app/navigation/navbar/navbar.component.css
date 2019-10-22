@@ -5,3 +5,7 @@
 .icon-right {
   flex: 1 1 auto;
 }
+
+object>.btn{
+  color: rgb(255, 255, 255);
+}

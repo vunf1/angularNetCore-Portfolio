@@ -12,3 +12,11 @@
 .textCentered{
   text-align: center;
 }
+
+.navbar{
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  color: chartreuse;
+
+}

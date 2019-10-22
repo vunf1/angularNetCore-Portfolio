@@ -1,27 +1,14 @@
-<!-- <section class="d-flex d-print-none">
-  <section>
-  <apr-sidebar></apr-sidebar>
-
-  <aside class="container">
-    <apr-about></apr-about>
-    <apr-experience></apr-experience>
-  </aside>
-
-
-</section> -->
-<!-- <section class="parent-container d-flex">
-
-  <main class="container">
-  </main>
-</section> -->
 <mat-sidenav-container class="example-container" >
-    <mat-sidenav class="example-sidenav" *ngIf="triggerNavigation == 'header'" mode="side" opened>
-        <apr-sidenav class="textCentered"></apr-sidenav>
-    </mat-sidenav>
-    <mat-sidenav-content class="textCentered">
-        <apr-navbar *ngIf="triggerNavigation == 'topbar'"  ></apr-navbar>
 
-    <apr-about></apr-about>
-    <!-- <apr-experience></apr-experience> -->
+    <mat-sidenav class="example-sidenav" *ngIf="triggerNavigation == 'header'"  mode="side" opened>
+
+        <apr-sidenav  class="textCentered"></apr-sidenav>
+
+    </mat-sidenav>
+    <mat-sidenav-content class="textCentered bg-grey">
+
+      <apr-navbar class="navbar  navbar-light bg-dark " *ngIf="triggerNavigation == 'topbar'"  ></apr-navbar>
+      <apr-about></apr-about>
+      <apr-experience></apr-experience>
     </mat-sidenav-content>
   </mat-sidenav-container>

@@ -6,7 +6,7 @@ import {Component, OnDestroy, HostListener, OnInit} from "@angular/core";
  */
 @Component({
   selector: "apr-root",
-  styleUrls: ["./app.component.css", "./css/resume.min.css" ],
+  styleUrls: ["./app.component.css"  ],
   templateUrl: "./app.component.html",
 })
 export class AppComponent implements OnInit  {

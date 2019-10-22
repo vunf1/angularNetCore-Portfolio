@@ -1,17 +1,17 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
 
-import { EmailFormComponent } from './emailForm.component';
+import { EmailFormComponent } from "./emailForm.component";
 
-describe('EmailFormComponent', () => {
+describe("EmailFormComponent", () => {
   let component: EmailFormComponent;
   let fixture: ComponentFixture<EmailFormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EmailFormComponent ]
+      declarations: [ EmailFormComponent ],
     })
     .compileComponents();
   }));
@@ -22,7 +22,7 @@ describe('EmailFormComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

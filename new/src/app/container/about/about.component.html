@@ -1,95 +1,90 @@
-<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+<section class="resume-section d-flex d-column" id="about">
 
   <main class="my-auto">
+
     <h1 class="mb-0 .text-muted">{{aboutData.name[0]}}
       <span class="text-primary">{{aboutData.name[1]}}</span>
     </h1>
-    <a></a>
 
-    <aside class="subheading mb-8 ">
+    <p (click)="triggerModal()" class="mb-2">Welcome to my Web-Portfolio</p>
 
-      <button type="button" class="btn btn-info text-left" data-toggle="collapse"
-        data-target=".clickable">
-        {{aboutData.addressTitle[0]}}</button>
+    <object *ngIf="isValid">
+
+      <aside class="subheading mb-8 ">
+        <button type="button" class="btn btn-info text-left" data-toggle="collapse" data-target=".clickable">
+          {{aboutData.addressTitle[0]}}</button>
 
         <article class="subheading mb-8 collapse clickable">
           <span class="fa fa-map-marker"></span>
           {{aboutData.address[0]}}
         </article>
-      <button type="button" class="btn btn-success text-left" data-toggle="collapse"
-        data-target=".clickable2">
-        {{aboutData.addressTitle[1]}}</button>
+        <button type="button" class="btn btn-success text-left" data-toggle="collapse" data-target=".clickable2">
+          {{aboutData.addressTitle[1]}}</button>
 
 
-      <article class="subheading mb-8 collapse clickable2">
-        <span class="fa fa-map-marker"></span>
-        {{aboutData.address[1]}}
-      </article>
+        <article class="subheading mb-8 collapse clickable2">
+          <span class="fa fa-map-marker"></span>
+          {{aboutData.address[1]}}
+        </article>
 
-      <p>
-        <span class="fa fa-phone"></span>
-        {{aboutData.contact[0]}} <br>
-        <span class="fa fa-envelope"></span>
-        <a class="text-dark" href="mailto:{{aboutData.contact[1]}}">
-          {{aboutData.contact[1]}}
-        </a>
-      </p>
+        <p>
+          <span class="fa fa-phone"></span>
+          {{aboutData.contact[0]}} <br>
+          <span class="fa fa-envelope"></span>
+          <a class="text-dark" href="mailto:{{aboutData.contact[1]}}">
+            {{aboutData.contact[1]}}
+          </a>
+        </p>
+      </aside>
 
-    </aside>
-    <br>
-    <p (click)="triggerModal()"class="mb-2">Welcome to my Web-Portfolio</p>
+      <br>
 
+      <ul class="list-inline list-social-icons ">
 
-    <ul class="list-inline list-social-icons ">
+        <li class="list-inline-item">
+          <a target="_blank" href="https://www.messenger.com/t/jokass.maia">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
 
-      <li class="list-inline-item">
-        <a target="_blank" href="https://www.messenger.com/t/jokass.maia">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="https://www.instagram.com/jokassmaia/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
 
-      <li class="list-inline-item">
-        <a target="_blank" href="https://www.instagram.com/jokassmaia/">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="https://www.linkedin.com/in/joao-maia/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
 
-      <li class="list-inline-item">
-        <a target="_blank" href="https://www.linkedin.com/in/joao-maia/">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
+        <li class="list-inline-item">
+          <a target="_blank" href="https://github.com/vunf1/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
 
-      <li class="list-inline-item">
-        <a target="_blank" href="https://github.com/vunf1/">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
+        <li class="list-inline-item exc">
+          <a target="_blank" href="https://github.coventry.ac.uk/deoiveij/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
 
-      <li class="list-inline-item exc">
-        <a target="_blank" href="https://github.coventry.ac.uk/deoiveij/">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-
-    </ul>
+      </ul>
 
 
+    </object>
 
     <br>
     <header class="subheading mb-2" style="color: darkblue">{{aboutData.softSkills[0]}}</header>

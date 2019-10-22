@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { navTitlesList } from "../constants_shared";
 import { ConsolaBrowser, escondeElement, CustomAlert} from "../../interface/sharedMethods";
-import { delay } from 'q';
+import { delay } from "q";
 
 @Component({
   selector: "apr-navbar",

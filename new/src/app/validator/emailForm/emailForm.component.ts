@@ -4,7 +4,7 @@ import {ErrorStateMatcher} from "@angular/material/core";
 @Component({
   selector: "apr-emailForm",
   templateUrl: "./emailForm.component.html",
-  styleUrls: ["./emailForm.component.css"]
+  styleUrls: ["./emailForm.component.css"],
 })
 export class EmailFormComponent implements OnInit {
   public emailFormControl = new FormControl("", [

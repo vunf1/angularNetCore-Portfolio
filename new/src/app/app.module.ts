@@ -24,8 +24,8 @@ import {
 import {
   BrowserAnimationsModule,
 } from "@angular/platform-browser/animations"; /* Animacoes no browser  */
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AngularFontAwesomeModule } from "angular-font-awesome";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 /**
  * MATERIALS
  */
@@ -103,7 +103,7 @@ import {
   NavbarComponent,
 } from "./navigation/navbar/navbar.component";
 import { EmailFormComponent } from "./validator/emailForm/emailForm.component";
-import { RecaptchaModule } from 'ng-recaptcha';
+import { RecaptchaModule } from "ng-recaptcha";
 
 const appRoutes: Routes = [{
     path: "about",

@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import * as emailCheck from "email-deep-validator";
+import * as emailCheck from "../../validator/emailForm/emailForm.component";
 import {CustomAlert} from "../../interface/sharedMethods";
 @Component({
   selector: "apr-about",
@@ -9,7 +9,7 @@ import {CustomAlert} from "../../interface/sharedMethods";
 export class AboutComponent implements OnInit {
 
   public modal = new CustomAlert("top left");
-
+  public isValid = false;
 /**
  *
  *  About Data
@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     addressTitle:
     ["UK Home Location - Current", "Portugal Home Location"],
     address:
-    ["1 King Richard Street, Coventry, CV2 4FU", "Rua do Vale, no.285, 2ºDTO, Arcozelo, 4410-348"],
+    ["1 King Richard Street, Coventry, CV2 4FU", "Rua do Vale, nº 285, 2º DTO, Arcozelo, 4410-348"],
     contact:
     ["(44) 7393557259", "jokass.workplace@gmail.com"],
     softSkills:
