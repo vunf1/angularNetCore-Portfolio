@@ -23,7 +23,7 @@
           - [Random Ideia for Project](#random-ideia-for-project)
 
 
-## Need TO install on linux/windows/mac:
+## Cross-Platform Installation (linux/windows/mac):
 ##### VSCode
 
 - [Download](https://code.visualstudio.com/Download)
