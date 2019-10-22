@@ -60,6 +60,9 @@ import {
   MatToolbarModule,
   MatTooltipModule,
 } from "@angular/material";
+import { HttpClientModule } from "@angular/common/http";
+
+
 // import {
 //   MatSidenavModule,
 // } from "@angular/material/sidenav";
@@ -126,6 +129,7 @@ const appRoutes: Routes = [{
   ],
   imports: [
     NgbModule,
+    HttpClientModule,
     RecaptchaModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -170,6 +174,7 @@ const appRoutes: Routes = [{
   ],
   exports: [
     BrowserAnimationsModule,
+    HttpClientModule,
     LayoutModule,
     MatAutocompleteModule,
     MatButtonModule,

@@ -7,7 +7,13 @@
     </mat-sidenav>
     <mat-sidenav-content class="textCentered bg-grey">
 
-      <apr-navbar class="navbar  navbar-light bg-dark " *ngIf="triggerNavigation == 'topbar'"  ></apr-navbar>
+      <apr-navbar class="navbar navbar-light bg-dark contentFixPaddiTopOnNav" *ngIf="triggerNavigation == 'topbar'"  id="navbar"></apr-navbar>
+
+      <object class="contentBox">
+        <apr-about></apr-about>
+        <apr-experience></apr-experience>
+      </object>
+
       <apr-about></apr-about>
       <apr-experience></apr-experience>
     </mat-sidenav-content>

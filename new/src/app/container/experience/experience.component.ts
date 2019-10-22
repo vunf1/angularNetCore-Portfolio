@@ -1,7 +1,7 @@
 // ! EXPERIENCE BOX
 import { Component, OnInit } from "@angular/core";
 import { JobDescription} from "../../interface/JobDescription";
-import { ConsolaBrowser, escondeElement} from "../../interface/sharedMethods";
+import { ConsolaBrowser, escondeElement } from "../../interface/sharedMethods";
 
 @Component({
   selector: "apr-experience",
