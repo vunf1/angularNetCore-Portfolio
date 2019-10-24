@@ -2,11 +2,13 @@
 
   <main class="my-auto">
 
-    <h1 class="mb-0 .text-muted">{{aboutData.name[0]}}
-      <span class="text-primary">{{aboutData.name[1]}}</span>
-    </h1>
+    <object >
+      <h1 class="mb-0 .text-muted">{{aboutData.name[0]}}
+        <span class="text-primary">{{aboutData.name[1]}}</span>
+      </h1>
 
-    <p (click)="triggerModal()" class="mb-2">Welcome to my Web-Portfolio</p>
+      <p (click)="triggerModal()" class="mb-2">Welcome to my Web-Portfolio</p>
+    </object>
 
     <object *ngIf="isValid">
 
@@ -80,15 +82,16 @@
             </span>
           </a>
         </li>
-
       </ul>
-
 
     </object>
 
     <br>
-    <header class="subheading mb-2" style="color: darkblue">{{aboutData.softSkills[0]}}</header>
+
+    <header class="subheading mb-2" style="color: darkblue;float: middle;">{{aboutData.softSkills[0]}}</header>
+
     <br>
+
     <ul class="fa-ul mb-0" style="color: green;">
       <li>
         <i class="fa-li fa fa-check"></i>

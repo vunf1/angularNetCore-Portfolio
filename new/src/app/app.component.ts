@@ -35,22 +35,14 @@ export class AppComponent implements OnInit {
 
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
-    console.log(this.element.querySelector(".contentBox") );
-    if (this.element.querySelector(".contentBox") !== null) {
-      const boxContent = this.element.querySelector(".contentBox");
 
-      if (this.screenWidth >= 790) {
-        if (boxContent !== null) { // Permite o content ficar no top enquanto muda pra Sidebar
-          this.renderer.setElementStyle(boxContent, "padding-top", "0%");
-        }
+    if (this.screenWidth >= 790) {
+
         this.triggerNavigation = "header";
-      } else {
 
-        if (boxContent !== null) { // Permite o content ficar distante da navbar enquanto muda
-          this.renderer.setElementStyle(boxContent, "padding-top", "20%");
-        }
+    } else {
+
         this.triggerNavigation = "topbar";
-      }
 
     }
   }
