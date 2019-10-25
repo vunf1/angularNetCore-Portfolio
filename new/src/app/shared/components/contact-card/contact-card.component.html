@@ -1,0 +1,20 @@
+<mat-expansion-panel *ngIf="contact">
+  <mat-expansion-panel-header>
+    <mat-panel-title fxLayoutGap="12px" fxLayoutAlign="start center">
+      <mat-icon>account_circle</mat-icon>
+      <span>{{contact.salutation}} {{contact.firstName}} {{contact.lastName}}</span>
+    </mat-panel-title>
+
+    <mat-panel-description fxLayoutAlign="start center">
+      {{contact.types.join(', ')}}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <mat-form-field>
+    <input matInput placeholder="Telephone" value="{{contact.telNo}}" disabled>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Cell" value="{{contact.mobileNo}}" disabled>
+  </mat-form-field>
+</mat-expansion-panel>

@@ -1,0 +1,34 @@
+<div *ngIf="imageToShow; else ErrorOrLoading" fxLayoutAlign="center center">
+  <img *ngIf="!isImageLoading; else noImageFound" [class.mat-card-avatar]="isAvatar" [src]="imageToShow"
+    [height]="height" alt="Place image title" (error)="onError($event)">
+
+  <ng-template #noImageFound>
+    <apr-no-result *ngIf="!isAvatar" icon="photo_camera" message="No photo available" size="small"></apr-no-result>
+
+    <mat-icon *ngIf="isAvatar" mat-card-avatar>photo_camera</mat-icon>
+  </ng-template>
+</div>
+
+<ng-template #ErrorOrLoading>
+  <ng-container *ngIf="error | async; else EmptyOrLoading">
+    <apr-no-result *ngIf="!isAvatar" [ngStyle]="{'height.px': height}" icon="warning"
+      message="Photo failed to load" size="small"></apr-no-result>
+
+    <mat-icon *ngIf="isAvatar" mat-card-avatar matTooltip="Photo failed to load">highlight_off</mat-icon>
+  </ng-container>
+
+  <ng-template #EmptyOrLoading>
+    <ng-container *ngIf="empty | async; else loading">
+      <apr-no-result *ngIf="!isAvatar" icon="photo_camera" size="small"
+        [ngStyle]="{'height.px': height}" message="No photo available"></apr-no-result>
+
+      <mat-icon *ngIf="isAvatar" mat-card-avatar>photo_camera</mat-icon>
+    </ng-container>
+
+    <ng-template #loading>
+      <div fxLayout="column" fxLayoutAlign="center center" [ngStyle]="{'height.px': height}">
+        <mat-spinner [diameter]="40" [strokeWidth]="4"></mat-spinner>
+      </div>
+    </ng-template>
+  </ng-template>
+</ng-template>

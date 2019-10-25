@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>{{ title }}</h2>
+
+<mat-dialog-content style="white-space: pre-line;" *ngIf="!loading; else loadingSpinner">
+  {{ content }}
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button *ngIf="!hideCloseButton" class="mat-button" (click)="close()"
+    [disabled]="closeButtonDisabled">{{ closeButtonText }}</button>
+  <button class="mat-button" (click)="confirm()"
+    [disabled]="loading || confirmButtonDisabled">{{ confirmButtonText }}</button>
+</mat-dialog-actions>
+
+<ng-template #loadingSpinner>
+  <mat-spinner></mat-spinner>
+</ng-template>

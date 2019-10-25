@@ -1,0 +1,22 @@
+<div *ngIf="templateForm">
+  <h1 mat-dialog-title>Add custom template</h1>
+  <div mat-dialog-content>
+    <form [formGroup]="templateForm">
+      <mat-form-field>
+        <input matInput placeholder="Title" formControlName="title" cdkFocusInitial>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput  placeholder="Body" formControlName="body"></textarea>
+      </mat-form-field>
+    </form>
+
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button color="primary" [disabled]="loading || (!templateForm.valid || templateForm.pristine)"
+            (click)="onSave()">
+      Add
+      <mat-spinner *ngIf="loading" [diameter]="30" [strokeWidth]="3"></mat-spinner>
+    </button>
+  </div>
+</div>
