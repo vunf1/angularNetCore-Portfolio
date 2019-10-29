@@ -28,15 +28,19 @@
 
 - [Download](https://code.visualstudio.com/Download)
 
-<h6> Extension </h6>
+<h6> Extensions </h6>
 
-[Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) formatter JSON HTML CSS JS +-TS
+[Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) formatter JSON HTML CSS JS +-TS <br>
 
+[Angular Schematics](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics) File Explorer Schematics <br>
+[vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) Side Files Iconned <br>
+[TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) <br>
+[Move TS - Move TypeScript files and update relative imports](https://marketplace.visualstudio.com/items?itemName=stringham.move-ts) <br>
 
 ### :exclamation: npm
 -   [Get npm](https://www.npmjs.com/get-npm)
 #### Dependencies <code>npm i </code>
-> - [ Angular 8 ]()
+> - [ Angular 8]()
 > - [ AlertifyJS ]()
 
 ### :exclamation: NodeJS
