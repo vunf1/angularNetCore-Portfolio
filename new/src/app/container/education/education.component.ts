@@ -12,15 +12,19 @@ export interface Tile {
   styleUrls: ["./education.component.css"],
 })
 export class EducationComponent implements OnInit {
-  public tiles: Tile[] = [{
-      text: "COVENTRY UNIVERSITY \n <br/> " + "COVENTRY, WEST MIDLANDS, UNITED KINGDOM",
-      cols: 3,
-      rows: 1,
-      color: "lightblue"},
-      {text: "September 2017 " + new Date("mm-yyyy"), cols: 2, rows: 1, color: "lightgreen"},
-      {text: "BACHELOR OF COMPUTER SCIENCE", cols: 5, rows: 1, color: "#DDBDF1"},
-      {text: "September 2017 " + new Date("mm-yyyy"), cols: 5, rows: 1, color: "lightgreen"},
-
+  public data: Array <string | Array<string | any> > = [
+    [
+      {title: "COVENTRY UNIVERSITY \n <br/> " + "COVENTRY, WEST MIDLANDS, UNITED KINGDOM", cols: 3, rows: 1, color: "white"},
+      {sdate: "September 2017 " + new Date("mm-yyyy"), cols: 2, rows: 1, color: "white"},
+      {subtitle: "BACHELOR OF COMPUTER SCIENCE", cols: 5, rows: 1, color: "white"},
+      {edate: "September 2017 " + new Date("mm-yyyy"), cols: 5, rows: 1, color: "white"},
+    ],
+    [
+      {title: "COVENTRY UNIVERSITY \n <br/> " + "COVENTRY, WEST MIDLANDS, UNITED KINGDOM", cols: 3, rows: 1, color: "white"},
+      {sdate: "September 2017 " + new Date("mm-yyyy"), cols: 2, rows: 1, color: "white"},
+      {subtitle: "BACHELOR OF COMPUTER SCIENCE", cols: 5, rows: 1, color: "white"},
+      {edate: "September 2017 " + new Date("mm-yyyy"), cols: 5, rows: 1, color: "white"},
+    ],
   ];
   constructor() { }
 

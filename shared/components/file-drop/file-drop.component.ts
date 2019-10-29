@@ -1,13 +1,13 @@
 import { Component, Output, EventEmitter, Input, OnInit } from "@angular/core";
 
-import { FileValidationService } from "shared/services/file-validation.service";
+// import { FileValidationService } from "shared/services/file-validation.service"; // NotFound
 import { DroppedFiles } from "./dropped-files";
 import { AcceptedFile } from "./accepted-file";
 import { RejectedFile } from "./rejected-file";
 import { RejectionReasons } from "./rejection-reasons";
 import { FileValidationError } from "./file-validation-error";
-import { getFileSizeString } from "shared/pipes/file-size.pipe";
-import { mimeTypes } from "shared/services/mime-types";
+// import { getFileSizeString } from "shared/pipes/file-size.pipe"; // NotFound
+// import { mimeTypes } from "shared/services/mime-types"; // NotFound
 
 @Component({
   selector: "apr-file-drop",
@@ -34,18 +34,19 @@ export class FileDropComponent implements OnInit {
   @Output()
   public filesModified = new EventEmitter<File[]>();
 
-  public selectedFiles: File[] = [];
+  public selectedFiles: File[] | any = [];
 
   constructor(public fileValidationService: FileValidationService) { }
 
   public ngOnInit() {
+    // receive the file by request
     if (this.fileName) {
       this.selectedFiles = [{
         name: this.fileName,
         lastModified: 0,
         size: 0,
         type: "",
-        slice: () => {} as Blob,
+        slice: () => { },
       }];
     }
   }

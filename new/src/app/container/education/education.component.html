@@ -1,10 +1,8 @@
-<mat-grid-list cols="5" rowHeight="100px">
-  <mat-grid-tile-header>Something</mat-grid-tile-header>
-  <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color">
-    {{tile.text}}
-  </mat-grid-tile>
+<h2>Ola</h2>
+
+<mat-grid-list cols="5" rowHeight="12%">
+      <mat-grid-tile *ngFor="let tile of data"
+          [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+        {{tile.title}}{{tile.subtitle}}{{tile.sdate}}{{tile.edate}}
+      </mat-grid-tile>
 </mat-grid-list>

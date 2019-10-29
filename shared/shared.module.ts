@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
-import { NgxMatSelectSearchModule } from "ngx-mat-select-search";
-import { VerticalTimelineModule } from "angular-vertical-timeline";
+// import { NgxMatSelectSearchModule } from "ngx-mat-select-search";
+// import { VerticalTimelineModule } from "angular-vertical-timeline";
 
 import { ContactCardComponent } from "./components/contact-card/contact-card.component";
 import { FileDropComponent } from "./components/file-drop/file-drop.component";
@@ -9,19 +9,19 @@ import { FileStateFactory } from "./components/file-drop/file-state-factory.serv
 import { ImageComponent } from "./components/image/image.component";
 import { NoResultComponent } from "./components/no-result/no-result.component";
 import { MaterialModule } from "./modules/material.module";
-import { FileValidationService } from "./services/file-validation.service";
+// import { FileValidationService } from "./services/file-validation.service";
 import { UtcToTimeZonePipe } from "./pipes/utc-to-time-zone.pipe";
 import { FileSizePipe } from "./pipes/file-size.pipe";
 import { ConfirmationDialogComponent, AlertDialogComponent } from "./components";
 import { CustomCurrencyPipe } from "./pipes/custom-currency.pipe";
 import { CustomTemplateDialogComponent } from "./components/custom-template-dialog/custom-template-dialog.component";
-import { CustomTemplateService } from "./services/custom-template.service";
+// import { CustomTemplateService } from "./services/custom-template.service";
 import { UnsavedChangesBaseComponent } from "./components/unsaved-changes-base/unsaved-changes-base.component";
-import { DebugPipe } from "shared/pipes/debug.pipe";
+// import { DebugPipe } from "shared/pipes/debug.pipe";
 @NgModule({
   imports: [
     MaterialModule,
-    VerticalTimelineModule,
+    // VerticalTimelineModule,
   ],
   declarations: [
     FileDropComponent,
@@ -34,7 +34,7 @@ import { DebugPipe } from "shared/pipes/debug.pipe";
     ConfirmationDialogComponent,
     AlertDialogComponent,
     CustomCurrencyPipe,
-    DebugPipe,
+    // DebugPipe,
     CustomTemplateDialogComponent,
     UnsavedChangesBaseComponent,
   ],
@@ -44,26 +44,26 @@ import { DebugPipe } from "shared/pipes/debug.pipe";
     FileDropDirective,
     ContactCardComponent,
     NoResultComponent,
-    NgxMatSelectSearchModule,
+    // NgxMatSelectSearchModule,
     UtcToTimeZonePipe,
     FileSizePipe,
-    DebugPipe,
+    // DebugPipe,
     ImageComponent,
     ConfirmationDialogComponent,
     AlertDialogComponent,
-    VerticalTimelineModule,
+    // VerticalTimelineModule,
     CustomCurrencyPipe,
     CustomTemplateDialogComponent,
   ],
   entryComponents: [ConfirmationDialogComponent, CustomTemplateDialogComponent, AlertDialogComponent],
   providers: [
-    FileValidationService,
+    // FileValidationService,
     FileStateFactory,
     CustomCurrencyPipe,
     UtcToTimeZonePipe,
     CustomCurrencyPipe,
-    DebugPipe,
-    CustomTemplateService,
+    // DebugPipe,
+    // CustomTemplateService,
   ],
 })
 export class SharedModule { }

@@ -62,7 +62,6 @@ import {
 } from "@angular/material";
 import { HttpClientModule } from "@angular/common/http";
 
-
 // import {
 //   MatSidenavModule,
 // } from "@angular/material/sidenav";
@@ -106,7 +105,7 @@ import {
   NavbarComponent,
 } from "./navigation/navbar/navbar.component";
 import { EmailFormComponent } from "./validator/emailForm/emailForm.component";
-import { EducationComponent } from "./container/education/education.component"
+import { EducationComponent } from "./container/education/education.component";
 import { RecaptchaModule } from "ng-recaptcha";
 
 const appRoutes: Routes = [{

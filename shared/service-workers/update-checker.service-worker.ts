@@ -1,6 +1,6 @@
+import { SwUpdate } from "@angular/service-worker";
 import { ApplicationRef, Injectable } from "@angular/core";
 import { MatSnackBar } from "@angular/material";
-import { SwUpdate } from "@angular/service-worker";
 
 import { interval } from "rxjs";
 
