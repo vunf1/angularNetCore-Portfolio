@@ -7,3 +7,6 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
+.contentFixPaddiTopOnNav{margin-top: 5%!important;}
+.NocontentFixPaddiTopOnNav{margin-top: 0%!important;}

@@ -1,0 +1,12 @@
+.text-inside-grid-center {
+  text-align: center;
+}
+.text-inside-grid-right {
+  text-align: right;
+}
+.text-inside-grid-left {
+  text-align: left;
+}
+.text-inside-grid-justify{
+  text-align: justify;
+}

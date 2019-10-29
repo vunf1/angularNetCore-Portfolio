@@ -12,5 +12,14 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "rxjs-no-internal": {
+    "severity": "error"
+  },
+  "rxjs-no-finnish": {
+    "severity": "error"
+  },
+  "deprecation": {
+    "severity": "warning"
+  },
 }

@@ -18,6 +18,9 @@ export class AppComponent implements OnInit {
   public title = "OverKill Project v.0.3.0";
 
   public triggerNavigation: string;
+  public triggerFixesSide: boolean;
+  public triggerFixesNav: boolean;
+
   public screenWidth: number;
   public screenHeight: number;
 
@@ -37,11 +40,16 @@ export class AppComponent implements OnInit {
     this.screenWidth = window.innerWidth;
 
     if (this.screenWidth >= 790) {
+        this.triggerFixesNav = false;
 
+        this.triggerFixesSide = true;
         this.triggerNavigation = "header";
 
     } else {
 
+        this.triggerFixesSide = false;
+
+        this.triggerFixesNav = true;
         this.triggerNavigation = "topbar";
 
     }

@@ -107,6 +107,7 @@ import {
 import { EmailFormComponent } from "./validator/emailForm/emailForm.component";
 import { EducationComponent } from "./container/education/education.component";
 import { RecaptchaModule } from "ng-recaptcha";
+import { SkillsComponent } from "./container/skills/skills.component";
 
 const appRoutes: Routes = [{
     path: "about",
@@ -127,6 +128,7 @@ const appRoutes: Routes = [{
     ExperienceComponent,
     EmailFormComponent,
     EducationComponent,
+    SkillsComponent,
   ],
   imports: [
     NgbModule,
