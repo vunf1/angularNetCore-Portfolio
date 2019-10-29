@@ -66,7 +66,10 @@
 
 ### :anger: BUGS FOUND :anger:
 
->    none found - front end been develop, no server side requests yet
+> - SideNav TO NAvBar Content Need new padding|margin
+
+
+>    no more found - front end [been develop], no server side requests yet
 
  **TO DO LIST**
 
