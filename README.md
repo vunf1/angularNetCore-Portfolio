@@ -98,10 +98,10 @@
 - [x] Content
 ##### Education
 - [ ] Design
-- [ ] Content
+- [x] Content
 ##### Skills
 - [ ] Design
-- [ ] Content
+- [x] Content
 ##### Interests
 - [ ] Design
 - [ ] Content
