@@ -5,17 +5,17 @@
         <apr-sidenav  class="textCentered"></apr-sidenav>
 
     </mat-sidenav>
-    <mat-sidenav-content class=" bg-grey" >
+    <mat-sidenav-content class=" bg-grey " >
 
       <apr-navbar class="navbar navbar-light bg-dark" *ngIf="triggerNavigation == 'topbar' "  id="navbar"></apr-navbar>
 
-      <object >
+      <object [ngClass]="{'p-5': true }">
 
         <!-- <apr-about ></apr-about> -->
         <!-- <apr-experience></apr-experience> -->
         <!-- <apr-education ></apr-education> -->
-        <apr-skills></apr-skills>
-
+        <!-- <apr-skills></apr-skills> -->
+        <router-outlet></router-outlet>
       </object>
 
     </mat-sidenav-content>

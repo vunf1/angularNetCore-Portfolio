@@ -110,12 +110,24 @@ import { RecaptchaModule } from "ng-recaptcha";
 import { SkillsComponent } from "./container/skills/skills.component";
 
 const appRoutes: Routes = [{
+    path: "",
+    component: AboutComponent,
+  },
+  {
     path: "about",
     component: AboutComponent,
   },
   {
     path: "experience",
     component: ExperienceComponent,
+  },
+  {
+    path: "education",
+    component: EducationComponent,
+  },
+  {
+    path: "skill",
+    component: SkillsComponent,
   },
 ];
 

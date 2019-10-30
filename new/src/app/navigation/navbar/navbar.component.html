@@ -40,10 +40,10 @@
   <ul class="navbar-nav ml-auto ">
     <object ngbDropdown *ngFor="let title of navTitlesList">
 
-      <a class="btn" href="#{{title}}"  id="{{title}}" role="button">
+      <a class="btn" href="{{title}}"  id="{{title}}" role="button">
         {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
       </a>
-      <p> </p>
+      <br>
       <!-- ngbDropdownToggle before this to trigger menu elements 'sections'
       <aside ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
         <a class="dropdown-item" href="#" (click)="$event.preventDefault()">{{title}}</a>

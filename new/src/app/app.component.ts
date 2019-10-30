@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   public triggerNavigation: string;
   public triggerFixesSide: boolean;
   public triggerFixesNav: boolean;
-
+  public fixPaddingWhnNav: boolean;
   public screenWidth: number;
   public screenHeight: number;
 
@@ -43,11 +43,13 @@ export class AppComponent implements OnInit {
         this.triggerFixesNav = false;
 
         this.triggerFixesSide = true;
+        this.fixPaddingWhnNav = false;
         this.triggerNavigation = "header";
 
     } else {
 
         this.triggerFixesSide = false;
+        this.fixPaddingWhnNav = true;
 
         this.triggerFixesNav = true;
         this.triggerNavigation = "topbar";
