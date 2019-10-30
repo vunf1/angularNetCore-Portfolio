@@ -40,7 +40,7 @@
   <ul class="navbar-nav ml-auto ">
     <object ngbDropdown *ngFor="let title of navTitlesList">
 
-      <a class="btn" href="{{title}}"  id="{{title}}" role="button">
+      <a class="btn" routerLink="/{{title}}" routerLinkActive="active"  id="{{title}}" role="button">
         {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
       </a>
       <br>

@@ -9,18 +9,18 @@
 
 ##### Indice
 - [BackLog](#backlog)
-    - [TaskBoard](#taskboard)
-    - [Components](#components)
-        - [Sidenav](#sidenav)
-        - [Topnav](#topnav)
-        - [About](#about)
-        - [Experience](#experience)
-        - [Education](#education)
-        - [Skills](#skills)
-        - [Interests](#interests)
-        - [Live Projects](#live-projects)
+  - [[TaskBoard] (#indice)](#taskboard-indice)
+    - [[Components] (#indice)](#components-indice)
+      - [Sidenav](#sidenav)
+      - [Topnav](#topnav)
+      - [About](#about)
+      - [Experience](#experience)
+      - [Education](#education)
+      - [Skills](#skills)
+      - [Interests](#interests)
+      - [Live Projects](#live-projects)
     - [Finished](#finished)
-          - [Random Ideia for Project](#random-ideia-for-project)
+      - [Random Ideia for Project](#random-ideia-for-project)
 
 
 ## Cross-Platform Installation (linux/windows/mac):
@@ -37,27 +37,35 @@
 [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) <br>
 [Move TS - Move TypeScript files and update relative imports](https://marketplace.visualstudio.com/items?itemName=stringham.move-ts) <br>
 
-### :exclamation: npm
--   [Get npm](https://www.npmjs.com/get-npm)
-#### Dependencies <code>npm i </code>
-> - [ Angular 8]()
-> - [ AlertifyJS ]()
+#### npm
+
+- [Get npm](https://www.npmjs.com/get-npm)
+
+#### Dependencies <code> npm i </code>
+
+> - [Angular 8]()
+> - [AlertifyJS]()
 
 ### :exclamation: NodeJS
--   easy method install node, <code>npm i -g n</code>
--   easy method specify version, <code>npm  n &lt; wanted version >, or npm  n@latest, or npm n </code>
+
+- easy method install node, <code>npm i -g n</code>
+- easy method specify version, <code>npm  n &lt; wanted version >, or npm  n@latest, or npm n </code>
 
 #### after npm and nodejs installed, project folder and execute
+
 #### <code>npm i</code>
-###### :point_right: OnInit - Possible, npm Dependencies Fix (tsc, rimraf) read Output 
+
+##### :point_right: OnInit - Possible, npm Dependencies Fix (tsc, rimraf) read Output
+
 #### :point_right: <code>npm audit fix</code>
+
 #### <code>npm run &lt; method from package.json file ></code>
 
 * * *
 
 ### :bust_in_silhouette: Github commands:
 
-###### config console with yout github account for correct commits
+#### config console with yout github account for correct commits
 
 <code>git config --global user.email "&lt; email >"</code>
 <br><code>git config --global user.name " " </code>
@@ -72,73 +80,87 @@
 
 > - SideNav TO NAvBar Content Need new padding|margin
 
+> no more found - front end [been develop], no server side requests yet
 
->    no more found - front end [been develop], no server side requests yet
-
- **TO DO LIST**
+#### **TO DO LIST**
 
 > extract CV info from jsonDocument ( mongoDB or CosmosDB)
 > <br>httpRequest, typescript load components by click  - menu 
 
 * * *
+
 # BackLog
 
 - [ ] major info [accessed by CATCH 'im not a robot' >>>> emailconfirmation(validation+valuation)]
+- [ ] Flags for translation PT EN
 
+## [TaskBoard](#indice)
 
-### [TaskBoard](#indice)
 ### [Components](#indice)
-##### Sidenav
- - [ ] Design
- - [x] Content
-##### Topnav
- - [ ] Design
- - [x] Content
-##### About
- - [ ] Design
- - [x] Content
-##### Experience
+
+#### Sidenav
+
 - [ ] Design
 - [x] Content
-##### Education
+
+#### Topnav
+
 - [ ] Design
 - [x] Content
-##### Skills
+
+#### About
+
 - [ ] Design
 - [x] Content
-##### Interests
+
+#### Experience
+
 - [ ] Design
-- [ ] Content
-##### Live Projects
+- [x] Content
+
+#### Education
+
+- [ ] Design
+- [x] Content
+
+#### Skills
+
+- [ ] Design
+- [x] Content
+
+#### Interests
+
 - [ ] Design
 - [ ] Content
 
---- 
+#### Live Projects
+
+- [ ] Design
+- [ ] Content
+
+
+* * *
 
 <details>
 
 <summary>Components routing:</summary>
 
 <code>
-<br>appModule [ 
+<br>appModule [
   <br>    [headerComponent, navbarComponent],
-   <br>    [aboutComponent, experienceComponent]
+   <br>    [aboutComponent, experienceComponent, educationComponent, skillComponent]
 <br>]</code>
 
 </details>
 
 ### Finished
 
--   [x] Github set up 
+- [x] Github set up
 
+#### [Random Ideia for Project](#indice)
 
-###### [Random Ideia for Project](#indice)
-
--   [ ] 
-
-
-
+- []
 
 |Author|  
 |--|
-|<a  href="https://twitter.com/wannabevunf1">[_Joao Maia _ ](https://github.coventry.ac.uk/deoiveij/)<br><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  | 
+|<a  href="https://twitter.com/wannabevunf1">[_Joao Maia _ ](https://github.coventry.ac.uk/deoiveij/)<br><img  src="https://github.com/vunf1/cplusplus_GAME/blob/master/authorsIMG/joao_maia.jpg?raw=true"  width="100"></a>  |

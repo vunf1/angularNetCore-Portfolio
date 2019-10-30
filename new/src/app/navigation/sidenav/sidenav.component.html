@@ -1,49 +1,20 @@
-<!-- ![ENGLISH]!  -->
-
-<!-- <header class="bg-dark border-none" [ngStyle]="{ height:100%, color: 'green' }" id="sidebar-wrapper" >
-  <h3 class="sidebar-heading bg-gradient-dark text-white">Joao Maia</h3>
-  <ul class="list-group list-group-flush">
-    <a class="list-group-item list-group-item-action bg-secondary text-white">
-      JJJJJ</a>
-  </ul>
-  </header> -->
-
-<!--
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</nav> -->
-
-<ng-container>
-  <mat-toolbar class="example-header">
+<ng-container  >
+  <mat-toolbar class="textCentered" >
     <!-- SideNav Header  Block -->
-    <a> Header </a>
-
+    <h3 class="bg-gradient-dark text-secondary">Joao Maia</h3>
   </mat-toolbar>
-  <mat-sidenav-container class="example-container ">
-    <mat-list *ngFor="let title of navTitlesList">
+  <mat-sidenav-container class="contMid" >
+    <mat-list  *ngFor="let title of navTitlesList">
 
-    <!-- SideNav Body  Block -->
-      <a (click)="some(title)">
+      <!-- SideNav Body  Block -->
+      <a routerLink="/{{title}}" routerLinkActive="active">
         {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
       </a>
     </mat-list>
   </mat-sidenav-container>
 
-  <mat-toolbar class="example-footer">
+  <mat-toolbar class="footer">
     <!-- SideNav Footer  Block -->
-    <h6>footer</h6>
+    <p style="font-size: 15px;" class="footer lead"><i id="desigTXT">Designed by: </i><a id="copyrights" target="_blank" href="https://vunf1.coventry.domains"><strong>Myself </strong></a></p>
   </mat-toolbar>
 </ng-container>

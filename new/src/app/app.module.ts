@@ -129,6 +129,7 @@ const appRoutes: Routes = [{
     path: "skill",
     component: SkillsComponent,
   },
+  { path: "**", component: SkillsComponent },
 ];
 
 @NgModule({
@@ -184,7 +185,8 @@ const appRoutes: Routes = [{
     ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: false }, // <-- debugging purposes only (true)
+      { enableTracing: false, // <-- debugging purposes only (true)
+        onSameUrlNavigation: "reload" },
     ),
   ],
   exports: [
