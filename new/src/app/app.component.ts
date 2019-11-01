@@ -5,9 +5,9 @@ import {
   OnInit,
   Renderer,
 } from "@angular/core";
-import { Router, RouterEvent, NavigationEnd } from '@angular/router';
-import { filter } from 'minimatch';
-import { Subject } from 'rxjs';
+import { Router, RouterEvent, NavigationEnd } from "@angular/router";
+import { filter } from "minimatch";
+import { Subject } from "rxjs";
 /**
  * !;
  *
@@ -26,7 +26,6 @@ export class AppComponent  implements OnInit, OnDestroy {
   public fixPaddingWhnNav: boolean;
   public screenWidth: number;
   public screenHeight: number;
-
 
   public destroyed = new Subject<any>();
   private element: Element;
@@ -51,7 +50,7 @@ export class AppComponent  implements OnInit, OnDestroy {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
 
-    if (this.screenWidth >= 790) {
+    if (this.screenWidth >= 854) {
         this.triggerFixesNav = false;
 
         this.triggerFixesSide = true;

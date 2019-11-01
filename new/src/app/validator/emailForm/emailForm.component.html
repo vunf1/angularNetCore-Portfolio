@@ -1,13 +1,18 @@
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Insert a Valid Email Address" [formControl]="emailFormControl"
+    <input id="inputMail" click="tri()" matInput placeholder="Insert a Valid Email Address" [formControl]="emailFormControl"
            [errorStateMatcher]="matcher">
-    <mat-hint>Unlock My information</mat-hint>
-    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+    <mat-hint>Email is <strong>required for contact information</strong></mat-hint>
+    <mat-error *ngIf="emailFormControl.notValid()">
       Please enter a valid email address
     </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
+    <mat-error *ngIf="emailFormControl.required()">
+      Email is <strong>required for contact information</strong>
     </mat-error>
+
+
+    <mat-error *ngIf="!emailFormControl.OK()">
+        Email
+      </mat-error>
   </mat-form-field>
 </form>

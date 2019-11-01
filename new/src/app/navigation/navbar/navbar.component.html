@@ -1,56 +1,28 @@
-<!-- <mat-toolbar color="secondary">
-  <mat-toolbar-row>
-
-    <span class="icon-right"></span>
-
-    <mat-icon mat-button [matMenuTriggerFor]="menu" class="icon-padding" aria-hidden="false"
-      aria-label="Example menu icon">menu</mat-icon>
-    <header class="btn-group icon-padding" ngbDropdown role="group">
-      <button class="btn" ngbDropdownToggle><mat-icon mat-button>menu</mat-icon></button>
-      <div class="dropdown-menu" ngbDropdownMenu *ngFor="let title of navTitlesList">
-        <a class="dropdown-item" ngbDropdownItem>{{title}}</a><br>
-      </div>
-    </header>
-  </mat-toolbar-row>
-</mat-toolbar> -->
-
-
-
-
-
-
-
-
-<a   >
-
-    <!-- less 500with trigger icon on NavBar-->
-    <a target="_blank" class="d-block d-lg-none" href="https://www.linkedin.com/in/joao-maia/">
+    <a target="_blank"  href="https://www.linkedin.com/in/joao-maia/">
       <span class="fa-stack fa-lg">
         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span>
     </a>
-  </a>
 
-<a aria-controls="navbarContent" [attr.aria-expanded]="!collapsed"
-  (click)="collapsed = !collapsed">
-  <mat-icon>menu</mat-icon>
-</a>
+    <a aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" (click)="collapsed = !collapsed">
+      <mat-icon>menu</mat-icon>
+    </a>
 
-<section class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
-  <ul class="navbar-nav ml-auto ">
-    <object ngbDropdown *ngFor="let title of navTitlesList">
+    <section class="navbar-collapse bg-secondary " [class.collapse]="collapsed" id="navbarContent">
+      <ul class="navbar-nav ml-auto text-inside-grid-right">
+        <object ngbDropdown *ngFor="let title of navTitlesList">
 
-      <a class="btn" routerLink="/{{title}}" routerLinkActive="active"  id="{{title}}" role="button">
-        {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
-      </a>
-      <br>
-      <!-- ngbDropdownToggle before this to trigger menu elements 'sections'
+          <a class="btn" routerLink="/{{title}}" routerLinkActive="active" id="{{title}}" role="button">
+            {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
+          </a>
+          <br>
+          <!-- ngbDropdownToggle before this to trigger menu elements 'sections'
       <aside ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
         <a class="dropdown-item" href="#" (click)="$event.preventDefault()">{{title}}</a>
       </aside> -->
 
-    </object>
+        </object>
 
-  </ul>
+      </ul>
 
-</section>
+    </section>

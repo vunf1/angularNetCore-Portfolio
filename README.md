@@ -91,8 +91,9 @@
 
 # BackLog
 
-- [ ] major info [accessed by CATCH 'im not a robot' >>>> emailconfirmation(validation+valuation)]
-- [ ] Flags for translation PT EN
+- [ ] major info [accessed by CATCH 'im not a robot' >>>> emailconfirmation(validation+valuation)];
+- [ ] Flags for translation PT EN ;
+- [ ] menu , topbar, less width side menu on the right;
 
 ## [TaskBoard](#indice)
 

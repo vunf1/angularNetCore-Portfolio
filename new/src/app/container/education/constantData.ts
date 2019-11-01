@@ -9,7 +9,7 @@ export let data: Array < string | Array < string | any > > = [
       cols: 3,
       rows: 1,
       color: "white",
-      class: "text-inside-grid-center",
+      class: "text-inside-grid-justify",
     },
     {
       sdate: "September 2017 " + "Present",

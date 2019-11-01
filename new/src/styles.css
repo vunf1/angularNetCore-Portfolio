@@ -8,5 +8,17 @@ body {
   overflow-x: hidden;
 }
 
-.contentFixPaddiTopOnNav{margin-top: 5%!important;}
+.contentFixPaddiTopOnNav{padding-top: 10%!important;}
 .NocontentFixPaddiTopOnNav{margin-top: 0%!important;}
+.text-inside-grid-center {
+  text-align: center;
+}
+.text-inside-grid-right {
+  text-align: right;
+}
+.text-inside-grid-left {
+  text-align: left;
+}
+.text-inside-grid-justify{
+  text-align: justify;
+}

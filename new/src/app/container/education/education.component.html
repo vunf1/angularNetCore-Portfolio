@@ -1,8 +1,8 @@
-<ng-template ngFor let-item [ngForOf]="data" let-i="index">
+<ng-template  ngFor let-item [ngForOf]="data" let-i="index">
 
-  <mat-grid-list cols="5" rowHeight="2:1">
+  <mat-grid-list cols="5" rowHeight="2:1" >
 
-    <mat-grid-tile *ngFor="let d of data[i]" [ngClass]="d.class" [colspan]="d.cols" [rowspan]="d.rows" [style.background]="d.color">
+    <mat-grid-tile *ngFor="let d of data[i]"  [colspan]="d.cols" [rowspan]="d.rows" [style.background]="d.color">
       {{d.title}}
       {{d.subtitle}}
       {{d.sdate}}
