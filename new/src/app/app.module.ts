@@ -109,28 +109,9 @@ import { EducationComponent } from "./container/education/education.component";
 import { RecaptchaModule } from "ng-recaptcha";
 import { SkillsComponent } from "./container/skills/skills.component";
 
-const appRoutes: Routes = [{
-    path: "",
-    component: AboutComponent,
-  },
-  {
-    path: "about",
-    component: AboutComponent,
-  },
-  {
-    path: "experience",
-    component: ExperienceComponent,
-  },
-  {
-    path: "education",
-    component: EducationComponent,
-  },
-  {
-    path: "skill",
-    component: SkillsComponent,
-  },
-  { path: "**", component: SkillsComponent },
-];
+import { InterestsComponent } from "./container/interests/interests.component";
+import {appRoutes} from "../app/routes/routeLink";
+import { CertificationsComponent } from "./container/certifications/certifications.component";
 
 @NgModule({
   declarations: [
@@ -142,6 +123,8 @@ const appRoutes: Routes = [{
     EmailFormComponent,
     EducationComponent,
     SkillsComponent,
+    InterestsComponent,
+    CertificationsComponent,
   ],
   imports: [
     NgbModule,

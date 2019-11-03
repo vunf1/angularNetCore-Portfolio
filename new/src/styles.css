@@ -22,3 +22,27 @@ body {
 .text-inside-grid-justify{
   text-align: justify;
 }
+.textCentered{
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.roundedIMG {
+  border-radius: 40%;
+}
+
+
+/*
+* SYSTEM COLORS
+*/
+.blackBG {
+  background: #343a40!important;
+}
+
+.blueBG {
+  background: #1d354d!important;
+}
+.transparentBG{
+  background: transparent!important;
+}

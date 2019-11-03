@@ -1,20 +1,22 @@
 <ng-container  >
-  <mat-toolbar class="textCentered" >
+  <mat-toolbar [ngClass]="triColor[0]" class="row mt-md-5"  >
     <!-- SideNav Header  Block -->
-    <h3 class="bg-gradient-dark text-secondary">Joao Maia</h3>
+    <p></p>
+    <img style="width: 100%; height: 100%;" class="col roundedIMG" src="../../assets/images/joao_maia.jpg">
+    <h6 class="col">Joao Maia</h6>
   </mat-toolbar>
-  <mat-sidenav-container class="contMid" >
-    <mat-list  *ngFor="let title of navTitlesList">
+  <mat-sidenav-container class="contMid  " >
+    <mat-list [ngClass]="triColor[0]"  *ngFor="let title of navTitlesList" >
 
       <!-- SideNav Body  Block -->
-      <a routerLink="/{{title}}" routerLinkActive="active">
+      <a routerLink="/{{title}}" routerLinkActive="active" >
         {{ title.charAt(0).toUpperCase() + title.substr(1).toLowerCase() }}
       </a>
     </mat-list>
   </mat-sidenav-container>
 
-  <mat-toolbar class="footer">
+  <mat-toolbar [ngClass]="triColor[0]" class="footer">
     <!-- SideNav Footer  Block -->
-    <p style="font-size: 15px;" class="footer lead"><i id="desigTXT">Designed by: </i><a id="copyrights" target="_blank" href="https://vunf1.coventry.domains"><strong>Myself </strong></a></p>
+    <p style="font-size: 10px;" class="footer lead textCentered"><i id="desigTXT">Designed by: </i><a id="copyrights" target="_blank" href="https://vunf1.coventry.domains"><strong>Myself </strong></a> </p>
   </mat-toolbar>
 </ng-container>

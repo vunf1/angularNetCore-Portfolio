@@ -1,9 +1,8 @@
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input id="inputMail" click="tri()" matInput placeholder="Insert a Valid Email Address" [formControl]="emailFormControl"
-           [errorStateMatcher]="matcher">
+    <input id="inputMail" click="tri()" matInput placeholder="Insert a Valid Email Address">
     <mat-hint>Email is <strong>required for contact information</strong></mat-hint>
-    <mat-error *ngIf="emailFormControl.notValid()">
+    <!-- <mat-error *ngIf="emailFormControl.notValid()">
       Please enter a valid email address
     </mat-error>
     <mat-error *ngIf="emailFormControl.required()">
@@ -13,6 +12,6 @@
 
     <mat-error *ngIf="!emailFormControl.OK()">
         Email
-      </mat-error>
+      </mat-error> -->
   </mat-form-field>
 </form>

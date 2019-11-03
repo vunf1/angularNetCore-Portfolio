@@ -10,8 +10,8 @@ import {EmailValidator} from "email-deep-validator";
 export class EmailFormComponent implements OnInit {
   // wellFormed: true
   constructor() { }
-  public tri(){
-    let str: any = (document.getElementById("inputMail") as HTMLInputElement).value ;
+  public tri() {
+    const str: any = (document.getElementById("inputMail") as HTMLInputElement).value ;
     console.log(str);
   }
 

@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from "@angular/core";
 import { NavTitles} from "../../interface/JobDescription";
 import { ConsolaBrowser, escondeElement, CustomAlert} from "../../interface/sharedMethods";
 import { navTitlesList } from "../constants_shared";
+import { SystemColors } from 'src/app/interface/colors.enum';
 @Component({
   selector: "apr-sidenav",
   templateUrl: "./sidenav.component.html",
@@ -13,6 +14,7 @@ export class SidenavComponent implements OnInit {
   public screenHeight: any;
   public screenWidth: any;
   public navTitlesList: string[] = navTitlesList;
+  public triColor = SystemColors;
   constructor() {
 
    }

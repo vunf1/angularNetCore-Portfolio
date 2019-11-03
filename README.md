@@ -9,8 +9,8 @@
 
 ##### Indice
 - [BackLog](#backlog)
-  - [[TaskBoard] (#indice)](#taskboard-indice)
-    - [[Components] (#indice)](#components-indice)
+  - [TaskBoard](#taskboard)
+    - [Components](#components)
       - [Sidenav](#sidenav)
       - [Topnav](#topnav)
       - [About](#about)
@@ -18,6 +18,7 @@
       - [Education](#education)
       - [Skills](#skills)
       - [Interests](#interests)
+      - [Certifications](#certifications)
       - [Live Projects](#live-projects)
     - [Finished](#finished)
       - [Random Ideia for Project](#random-ideia-for-project)
@@ -85,13 +86,12 @@
 #### **TO DO LIST**
 
 > extract CV info from jsonDocument ( mongoDB or CosmosDB)
-> <br>httpRequest, typescript load components by click  - menu 
 
 * * *
 
 # BackLog
 
-- [ ] major info [accessed by CATCH 'im not a robot' >>>> emailconfirmation(validation+valuation)];
+- [ ] major info >>> access by Email verification;
 - [ ] Flags for translation PT EN ;
 - [ ] menu , topbar, less width side menu on the right;
 
@@ -101,7 +101,7 @@
 
 #### Sidenav
 
-- [ ] Design
+- [x] Design
 - [x] Content
 
 #### Topnav
@@ -111,7 +111,7 @@
 
 #### About
 
-- [ ] Design
+- [x] Design
 - [x] Content
 
 #### Experience
@@ -132,7 +132,12 @@
 #### Interests
 
 - [ ] Design
-- [ ] Content
+- [x] Content
+
+#### Certifications
+
+- [ ] Design
+- [x] Content
 
 #### Live Projects
 
@@ -157,6 +162,8 @@
 ### Finished
 
 - [x] Github set up
+
+> <br>httpRequest, typescript load components by click  - menu [top,side]
 
 #### [Random Ideia for Project](#indice)
 

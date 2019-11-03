@@ -12,6 +12,7 @@ import { Subject } from "rxjs";
  * !;
  *
  */
+import { SystemColors} from "../app/interface/colors.enum";
 @Component({
   selector: "apr-root",
   styleUrls: ["./app.component.css"],
@@ -19,6 +20,8 @@ import { Subject } from "rxjs";
 })
 export class AppComponent  implements OnInit, OnDestroy {
   public title = "OverKill Project v.0.3.0";
+
+  public triColor = SystemColors;
 
   public triggerNavigation: string;
   public triggerFixesSide: boolean;

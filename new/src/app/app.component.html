@@ -1,22 +1,21 @@
 
 <mat-sidenav-container class="example-container">
 
-    <mat-sidenav class="example-sidenav"  *ngIf="triggerNavigation == 'header'"  mode="side" opened>
+    <mat-sidenav [ngClass]="triColor[0]" class="example-sidenav"  *ngIf="triggerNavigation == 'header'"  mode="side" opened>
 
-        <apr-sidenav  class="textCentered"></apr-sidenav>
+        <apr-sidenav  class="text-inside-grid-center "></apr-sidenav>
 
     </mat-sidenav>
-    <mat-sidenav-content class=" bg-grey "  >
+    <mat-sidenav-content >
 
-  <apr-navbar  *ngIf="triggerNavigation == 'topbar'"  class="navbar navbar-light bg-dark" id="navbar"></apr-navbar>
+  <apr-navbar  *ngIf="triggerNavigation == 'topbar'"  [ngClass]="triColor[1]"  class="navbar navbar-light " id="navbar"></apr-navbar>
 
-      <object [ngClass]="{'contentFixPaddiTopOnNav': true }" >
-
+      <object >
         <!-- <apr-about ></apr-about>
         <apr-experience></apr-experience>
         <apr-education ></apr-education>
         <apr-skills></apr-skills> -->
-        <router-outlet class=" p-5 m-5"  ></router-outlet>
+        <router-outlet  ></router-outlet>
       </object>
 
     </mat-sidenav-content>

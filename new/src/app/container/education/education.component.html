@@ -1,14 +1,44 @@
-<ng-template  ngFor let-item [ngForOf]="data" let-i="index">
+<!-- <ng-template ngFor let-item [ngForOf]="data" let-i="index">
 
-  <mat-grid-list cols="5" rowHeight="2:1" >
+  <mat-grid-list class="text-inside-grid-center" cols="5" rowHeight="2:1" class="m-5" style="padding: 6rem!important;">
+    <ng-container *ngFor="let d of data[i]">
+      <mat-grid-tile-header >
+       <a style="align-content: center;">
+          {{d.mainTitle}}
+       </a>
+       </mat-grid-tile-header>
 
-    <mat-grid-tile *ngFor="let d of data[i]"  [colspan]="d.cols" [rowspan]="d.rows" [style.background]="d.color">
-      {{d.title}}
-      {{d.subtitle}}
-      {{d.sdate}}
-      {{d.description}}
-    </mat-grid-tile>
+      <mat-grid-tile [ngClass]="d.class" [colspan]="d.cols" [rowspan]="d.rows">
+        {{d.title}}
+        {{d.subtitle}}
+        {{d.sdate}}
+        {{d.description}}
 
+      </mat-grid-tile>
+    </ng-container>
   </mat-grid-list>
 
-</ng-template>
+</ng-template> -->
+
+
+<ng-container *ngFor="let d of data">
+
+  <div class="container-fluid p-5 m-5">
+    <h4>{{d.mainTitle}}</h4>
+
+    <div class="row">
+      <div class="col-8">{{d.title}}</div>
+      <div class="col-4">{{d.sdate}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col">{{d.subtitle}}</div>
+    </div>
+
+    <div class="row">
+      <div class="col">{{d.description}}</div>
+    </div>
+
+  </div>
+
+</ng-container>
