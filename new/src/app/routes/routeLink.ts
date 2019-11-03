@@ -5,6 +5,7 @@ import { EducationComponent } from "../container/education/education.component";
 import { SkillsComponent } from "../container/skills/skills.component";
 import { InterestsComponent } from "../container/interests/interests.component";
 import { CertificationsComponent } from "../container/certifications/certifications.component";
+import { NotFoundComponent } from "../errors/notFound/notFound.component";
 
 export const appRoutes: Routes = [{
   path: "",
@@ -34,5 +35,5 @@ export const appRoutes: Routes = [{
   path: "certifications",
   component: CertificationsComponent,
 },
-{ path: "**", component: SkillsComponent },
+{ path: "**", component: NotFoundComponent },
 ];

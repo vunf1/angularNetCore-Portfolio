@@ -5,6 +5,17 @@
 }
 .contMid{
 
-  margin: 60% auto;
+  margin: 10% auto;
   vertical-align: middle;
+}
+.example-card {
+  max-width: 100%;
+
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+.example-header-image {
+  background-image: url('https://raw.githubusercontent.com/vunf1/cplusplus_GAME/master/authorsIMG/joao_maia.jpg');
+  background-size: cover;
 }
