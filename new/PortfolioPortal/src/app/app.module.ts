@@ -112,7 +112,7 @@ import { SkillsComponent } from "./container/skills/skills.component";
 import { InterestsComponent } from "./container/interests/interests.component";
 import {appRoutes} from "../app/routes/routeLink";
 import { CertificationsComponent } from "./container/certifications/certifications.component";
-import { NotFoundComponent } from './errors/notFound/notFound.component';
+import { NotFoundComponent } from "./errors/notFound/notFound.component";
 
 @NgModule({
   declarations: [

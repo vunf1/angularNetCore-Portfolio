@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener } from "@angular/core";
 import { NavTitles} from "../../interface/JobDescription";
 import { ConsolaBrowser, escondeElement, CustomAlert} from "../../interface/sharedMethods";
 import { navTitlesList } from "../constants_shared";
-import { SystemColors } from 'src/app/interface/colors.enum';
+import { SystemColors } from "src/app/interface/colors.enum";
 @Component({
   selector: "apr-sidenav",
   templateUrl: "./sidenav.component.html",
