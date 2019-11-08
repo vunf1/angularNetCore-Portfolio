@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  _portfolio:
-    image: ${DOCKER_REGISTRY-}portfolio
+  portfolioportal:
+    image: ${DOCKER_REGISTRY-}portfolioportal
     build:
       context: .
       dockerfile: Dockerfile

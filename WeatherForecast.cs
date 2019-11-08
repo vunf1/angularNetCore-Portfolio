@@ -1,6 +1,6 @@
 using System;
 
-namespace _Portfolio
+namespace portfolioPortal
 {
     public class WeatherForecast
     {

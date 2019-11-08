@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>0aa9de50-9649-46eb-9323-4c803a4fe1a1</ProjectGuid>
+    <ProjectGuid>91f51f0f-d279-427f-bfa5-21440a17d798</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>_portfolio</DockerServiceName>
+    <DockerServiceName>portfolioportal</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

@@ -5,9 +5,8 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.IO;
 
-namespace _Portfolio
+namespace portfolioPortal
 {
     public class Startup
     {
@@ -25,7 +24,7 @@ namespace _Portfolio
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "PortfolioPortal/dist";
+                configuration.RootPath = "ClientApp/dist";
             });
         }
 
@@ -64,12 +63,8 @@ namespace _Portfolio
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = Path.Join(env.ContentRootPath, "PortfolioPortal");
+                spa.Options.SourcePath = "ClientApp";
 
-                if (env.IsDevelopment())
-                {
-                    spa.UseAngularCliServer(npmScript: "start");
-                }
             });
         }
     }

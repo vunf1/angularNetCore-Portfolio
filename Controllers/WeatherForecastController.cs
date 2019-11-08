@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace _Portfolio.Controllers
+namespace portfolioPortal.Controllers
 {
     [ApiController]
     [Route("[controller]")]
