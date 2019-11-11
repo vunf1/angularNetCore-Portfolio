@@ -1,5 +1,9 @@
 node_modules
-
 new/node_modules
-
-README.md
+.vs
+"*.exe"
+/agent
+obj
+/agent
+/obj
+/koaN/koan
