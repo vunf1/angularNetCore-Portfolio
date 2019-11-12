@@ -1,15 +1,15 @@
-<ng-container>
+<ng-container >
 
-<mat-card [ngClass]="triColor[2]" class="example-card ">
-    <img class="roundedIMG" mat-card-image src="https://raw.githubusercontent.com/vunf1/cplusplus_GAME/master/authorsIMG/joao_maia.jpg"  >
+<mat-card [ngClass]="triColor[2]" class="example-card  ">
+    <img class="roundedIMG w-75" mat-card-image src="https://raw.githubusercontent.com/vunf1/cplusplus_GAME/master/authorsIMG/joao_maia.jpg"  >
 
       <mat-card-title>Joao Maia</mat-card-title>
       <mat-card-subtitle>Software Engineer</mat-card-subtitle>
 
 
   </mat-card>
-  <mat-sidenav-container class="sidebarContainer" [ngClass]="triColor[0]" >
-    <mat-list *ngFor="let title of navTitlesList">
+  <mat-sidenav-container class="sidebarContainer m-5 " [ngClass]="triColor[0]" >
+    <mat-list class="text-inside-grid-left" *ngFor="let title of navTitlesList">
 
       <!-- SideNav Body  Block -->
       <a routerLink="/{{title}}" routerLinkActive="active">
@@ -17,24 +17,18 @@
       </a>
     </mat-list>
 
-  <object>
-    <a class="icon">
-      <i class="fa fa-sun-o" aria-hidden="true"></i>
-    </a>
-    <a >
-      <label>
-        <input type="checkbox" id="switch-style">
-        <span class="slider round"></span>
-    </label>
-    </a>
-
-    <a class="icon">
-      <i class="fa fa-moon-o" aria-hidden="true"></i>
-    </a>
-  </object>
   </mat-sidenav-container>
 
   <mat-toolbar [ngClass]="triColor[0]" class="footer">
+    <p>
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+    <label >
+          <mat-slide-toggle aria-hidden="true">  </mat-slide-toggle>
+    </label>
+      <i class="fa fa-sun-o" aria-hidden="true"></i>
+
+    </p>
+
     <!-- SideNav Footer  Block -->
     <p style="font-size: 10px;" class="footer lead textCentered"><i id="desigTXT">Designed by: </i><a id="copyrights"
         target="_blank" href="https://vunf1.coventry.domains"><strong>Myself </strong></a> </p>

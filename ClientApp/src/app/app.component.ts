@@ -53,7 +53,7 @@ export class AppComponent  implements OnInit, OnDestroy {
     this.screenHeight = window.innerHeight;
     this.screenWidth = window.innerWidth;
 
-    if (this.screenWidth >= 854 && this.screenHeight > 555 ) {
+    if (this.screenWidth > 1178 && this.screenHeight > 555 ) {
         this.triggerNavigation = "header";
 
     } else {

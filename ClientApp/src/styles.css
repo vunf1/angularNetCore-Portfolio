@@ -29,6 +29,7 @@ body {
 }
 
 .roundedIMG {
+  width: 50%;
   border-radius: 60%;
 }
 
